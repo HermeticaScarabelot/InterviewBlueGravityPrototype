@@ -16,13 +16,13 @@ public class PlayerInteractionManager : MonoBehaviour
     [SerializeField]
     private float rayLength = 1;
 
-    [SerializeField]
-    private FacingDirection currentDirection;
     private PlayerMovement playerMovement;
+    private LayerMask interactionLayerMask;
 
 
     private void Awake()
     {
+        interactionLayerMask = LayerMask.GetMask("Interactable");
         if (!playerMovement)
         {
             playerMovement = GetComponent<PlayerMovement>();
@@ -40,11 +40,11 @@ public class PlayerInteractionManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             Vector2 rayDirection = GetRayDirection();
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDirection, rayLength);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDirection, rayLength, interactionLayerMask);
             
             if (hit.collider)
             {
-                Debug.Log(hit.collider.gameObject);
+                Debug.Log("batata");
             }
         }
     }

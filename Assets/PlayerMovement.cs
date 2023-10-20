@@ -5,16 +5,24 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    public Vector2 playerInputAxis;
     public float movementSpeed;
     public PlayerInteractionManager.FacingDirection facingDirection;
     
 
-    public Vector2 playerInputAxis;
+    [SerializeField]
+    private PlayerAnimationController playerAnimationController;
+
     private Vector3 defaultScale;
 
+    
     private void Awake()
     {
+        if (!playerAnimationController)
+        {
+            playerAnimationController = GetComponent<PlayerAnimationController>();
+        }
+        
         defaultScale = transform.localScale;
     }
 
@@ -26,12 +34,34 @@ public class PlayerMovement : MonoBehaviour
     void Move(float deltaTime)
     {
         playerInputAxis = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        Vector2 dirNormalized = playerInputAxis.normalized;
+        
+        if (playerInputAxis != Vector2.zero)
+        {
+            Vector2 dirNormalized = playerInputAxis.normalized;
+            Vector2 step = dirNormalized * (deltaTime * movementSpeed);
+            transform.Translate(step, Space.World);
+            
+            UpdatePlayerDirection();
+            FlipSprite();
+            Debug.Log("wtf");
+            UpdateMovementAnimationState(PlayerAnimationController.PlayerState.Running);
+        }
+        else
+        {
+            UpdateMovementAnimationState(PlayerAnimationController.PlayerState.Idle);
+        }
+        
 
-        Vector2 step = dirNormalized * (deltaTime * movementSpeed);
-        transform.Translate(step, Space.World);
-        UpdatePlayerDirection();
-        FlipSprite();
+    }
+    
+    void UpdateMovementAnimationState(PlayerAnimationController.PlayerState newState)
+    {
+        if (playerAnimationController.inSpecialPlayerState)
+        {
+            return;
+        }
+        
+        playerAnimationController.activePlayerState = newState;
     }
 
     void FlipSprite()
