@@ -8,12 +8,15 @@ using UnityEngine.UI;
 public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
 {
 
+    public int slotId;
     public ItemScriptableObject scriptableItem;
     public ItemScriptableObject.ItemType type;
     public string itemName;
     public Sprite itemSprite;
     
     [SerializeField] private Image image;
+
+    private InventoryManager inventoryManager;
     
     
     public SpriteRenderer testPlayerTorsoSprite;
@@ -25,6 +28,11 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
         }
     }
 
+    private void Start()
+    {
+        inventoryManager = InventoryManager.InventoryManagerInstance;
+    }
+
     public void UpdateItemSlot(ItemScriptableObject newItem)
     {
         scriptableItem = newItem;
@@ -32,6 +40,15 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
         itemName = newItem.itemName;
         itemSprite = newItem.itemSprite;
         image.sprite = itemSprite;
+    }
+
+    public void ResetItemSlot()
+    {
+        scriptableItem = null;
+        type = ItemScriptableObject.ItemType.Empty;
+        itemName = "";
+        itemSprite = null;
+        image.sprite = null;
     }
 
 
@@ -51,6 +68,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
                 return;
             case ItemScriptableObject.ItemType.Outfit:
                 testPlayerTorsoSprite.sprite = scriptableItem.itemSprite;
+                inventoryManager.RemoveItemByIndex(slotId);
                 Debug.Log("ChangeOutfit");
                 break;
         }

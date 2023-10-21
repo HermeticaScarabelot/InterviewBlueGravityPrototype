@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
@@ -11,8 +12,9 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject inventoryPanelGo;
     
     public InventorySlotUI[] inventorySlotsUI = new InventorySlotUI[0];
+    public ItemScriptableObject[] inventoryItems = new ItemScriptableObject[0];
         
-    public List<ScriptableObject> inventoryItems = new List<ScriptableObject>();
+    //public List<ScriptableObject> inventoryItems = new List<ScriptableObject>();
 
     private void Awake()
     {
@@ -24,6 +26,11 @@ public class InventoryManager : MonoBehaviour
         if (inventoryPanelGo)
         {
             inventorySlotsUI = inventoryPanelGo.GetComponentsInChildren<InventorySlotUI>();
+            for (int i = 0; i < inventorySlotsUI.Length; i++)
+            {
+                inventorySlotsUI[i].slotId = i;
+            }
+            inventoryItems = new ItemScriptableObject[inventorySlotsUI.Length];
         }
     }
 
@@ -49,30 +56,40 @@ public class InventoryManager : MonoBehaviour
 
     public bool PickupItem(ItemScriptableObject item)
     {
-        if (inventoryItems.Count < inventorySlotsUI.Length)
+        for (int i = 0; i < inventoryItems.Length; i++)
         {
-            inventoryItems.Add(Instantiate(item));
-
-            foreach (var inventorySlotUI in inventorySlotsUI)
+            if (inventoryItems[i] == null)
             {
-                if (inventorySlotUI.type == ItemScriptableObject.ItemType.Empty)
-                {
-                    inventorySlotUI.UpdateItemSlot(item);
-                    break;
-                }
+                inventoryItems[i] = item;
+                inventorySlotsUI[i].UpdateItemSlot(item);
+                return true;
             }
-            return true;
         }
         return false;
     }
 
-    public bool RemoveItem(ItemScriptableObject item)
+    public bool RemoveItemByName(ItemScriptableObject item)
     {
         if (inventoryItems.Contains(item))
         {
-            inventoryItems.IndexOf(item)
-            inventoryItems.Remove(item);
+            for (int i = 0; i < inventoryItems.Length; i++)
+            {
+                if (inventoryItems[i] == item)
+                {
+                    inventoryItems[i] = null;
+                    inventorySlotsUI[i].ResetItemSlot();
+                    return true;
+                }
+            }
         }
+        return false;
+    }
+
+    public bool RemoveItemByIndex(int index)
+    {
+        inventoryItems[index] = null;
+        inventorySlotsUI[index].ResetItemSlot();
+        return true;
     }
 
 }
