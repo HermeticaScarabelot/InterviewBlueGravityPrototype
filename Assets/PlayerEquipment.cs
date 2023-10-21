@@ -26,9 +26,10 @@ public class PlayerEquipment : MonoBehaviour
 
     public void EquipNewTorso(ItemScriptableObject newTorso, int newTorsoSlotId=0)
     {
-        if (equippedTorso)
+        if (equippedTorso)//If the player already have a Torso Equipped, the Current equipped torso will be moved to the Inventory
         {
             inventoryManager.AddItemToSlot(equippedTorso, newTorsoSlotId);
+            inventoryManager.UpdateTooltip(equippedTorso);
         }
         equippedTorso = newTorso;
         torsoRenderer.sprite = equippedTorso.itemSprite;

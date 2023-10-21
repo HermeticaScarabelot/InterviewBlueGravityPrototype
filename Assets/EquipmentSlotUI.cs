@@ -10,7 +10,8 @@ public class EquipmentSlotUI : MonoBehaviour
     public enum EquipmentSlotType
     {
         Helm,
-        Torso
+        Torso,
+        Legs
     }
     
     [SerializeField] private EquipmentSlotType slotType;

@@ -2558,6 +2558,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e080565f470cba41b7e5c4289e9595f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemName: {fileID: 1296782537}
+  image: {fileID: 1062863291}
 --- !u!114 &673220603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2969,6 +2971,7 @@ MonoBehaviour:
   - {fileID: 0}
   heldItemSlotId: 0
   holdingItem: 0
+  tooltipSlotUI: {fileID: 673220602}
 --- !u!1 &860036806
 GameObject:
   m_ObjectHideFlags: 0
@@ -4174,9 +4177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596af7cedf19af74b8c1f8f2d82de9c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotType: 1
-  equipmentSprite: {fileID: 21300000, guid: 215dd6c48c732d744aecd29e7fecbbfa, type: 3}
-  equippedItem: {fileID: 11400000, guid: c9b7a93c1c1ad804899e8cbf80b092e4, type: 2}
+  slotType: 2
+  equipmentSprite: {fileID: 0}
+  equippedItem: {fileID: 0}
   image: {fileID: 0}
 --- !u!114 &1172512170
 MonoBehaviour:
@@ -4603,9 +4606,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 596af7cedf19af74b8c1f8f2d82de9c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slotType: 1
-  equipmentSprite: {fileID: 21300000, guid: 215dd6c48c732d744aecd29e7fecbbfa, type: 3}
-  equippedItem: {fileID: 11400000, guid: c9b7a93c1c1ad804899e8cbf80b092e4, type: 2}
+  slotType: 0
+  equipmentSprite: {fileID: 0}
+  equippedItem: {fileID: 0}
   image: {fileID: 0}
 --- !u!114 &1337815000
 MonoBehaviour:
@@ -6259,7 +6262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc406ba4151527f40a666349bbafa832, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torsoSlotUI: {fileID: 1337814999}
+  torsoSlotUI: {fileID: 1718558084}
   torsoRenderer: {fileID: 1928123639}
   equippedTorso: {fileID: 11400000, guid: c9b7a93c1c1ad804899e8cbf80b092e4, type: 2}
 --- !u!1001 &1633065118

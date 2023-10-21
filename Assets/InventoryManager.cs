@@ -17,6 +17,8 @@ public class InventoryManager : MonoBehaviour
     public int heldItemSlotId;
     public bool holdingItem;
 
+    [SerializeField] private TooltipSlotUI tooltipSlotUI;
+    
     //public List<ScriptableObject> inventoryItems = new List<ScriptableObject>();
 
     private void Awake()
@@ -122,6 +124,11 @@ public class InventoryManager : MonoBehaviour
         inventoryItems[index] = null;
         inventorySlotsUI[index].ResetItemSlot();
         return true;
+    }
+
+    public void UpdateTooltip(ItemScriptableObject item)
+    {
+        tooltipSlotUI.UpdateTooltipSlot(item);
     }
 
 }

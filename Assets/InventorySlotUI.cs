@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
+public class InventorySlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler
 {
 
     public int slotId;
@@ -106,8 +106,15 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
                 break;
         }
         //inventoryManager.RemoveItemByIndex(slotId);
-
-
+        
     }
-    
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (type == ItemScriptableObject.ItemType.Empty)
+        {
+            return;
+        }
+        inventoryManager.UpdateTooltip(scriptableItem);
+    }
 }
