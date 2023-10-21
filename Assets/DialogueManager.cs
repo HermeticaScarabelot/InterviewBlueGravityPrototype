@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager DialogueManagerInstance;
     
-    [SerializeField] private GameObject textPanelGo;
+    [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TextMeshProUGUI textUGUI;
     [SerializeField] private float delayBetweenChar;
 
@@ -32,8 +32,11 @@ public class DialogueManager : MonoBehaviour
     
     public IEnumerator TypeString(string line)
     {
-
-        Debug.Log("Started Typing");
+        if (!dialoguePanel.activeSelf)
+        {
+            dialoguePanel.SetActive(true);
+        }
+        
         isTyping = true;
         char[] allChars = line.ToCharArray();
         foreach (var c in allChars)
@@ -41,9 +44,12 @@ public class DialogueManager : MonoBehaviour
             textUGUI.text += c;
             yield return new WaitForSeconds(delayBetweenChar);
         }
-
         isTyping = false;
+    }
 
-
+    public void CloseDialogue()
+    {
+        ResetText();
+        dialoguePanel.SetActive(false);
     }
 }

@@ -5,27 +5,29 @@ using UnityEngine;
 
 public class Dialogue : Interactable
 {
-
-    public string[] lines;
+    public delegate void DialogueFinishedEventHandler();
+    public event DialogueFinishedEventHandler OnDialogueFinished;
+    
+    
+    [SerializeField] public string[] lines;
     private int linesIndex = 0;
 
-    public bool canInteract;
-    
+    public bool isShop;
     private DialogueManager dialogueManager;
 
     private void Start()
     {
         dialogueManager = DialogueManager.DialogueManagerInstance;
-        dialogueManager.dialogueButton.onClick.AddListener(CustomButtonClick);
+ 
     }
 
     public override void Interact()
     {
         base.Interact();
-        NextDialogue();
+        NextLine();
     }
 
-    public void NextDialogue()
+    public void NextLine()
     {
         if (dialogueManager.isTyping)
         {
@@ -36,11 +38,20 @@ public class Dialogue : Interactable
             dialogueManager.ResetText();
             dialogueManager.StartCoroutine(dialogueManager.TypeString(lines[linesIndex]));
             linesIndex++;
+            Debug.Log(linesIndex + " / " + lines.Length );
         }
-        else if(linesIndex == lines.Length-1)
+        else if(linesIndex == lines.Length) //Last Line
         {
-            
+            OnDialogueFinished?.Invoke();
+            dialogueManager.CloseDialogue();
+            linesIndex = 0;
+            //ShopManager.ShopManagerInstance.OpenShop();
         }
+    }
+
+    public void FinishedDialogue()
+    {
+        
     }
     
     public void CustomButtonClick()
