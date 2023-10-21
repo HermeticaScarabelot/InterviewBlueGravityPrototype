@@ -8,7 +8,6 @@ public class DroppedOutfit : Interactable
 
 
     [SerializeField] private ItemScriptableObject itemScriptableObject;
-    [SerializeField] private Sprite outfitSprite;
     
     private InventoryManager inventoryManager;
 

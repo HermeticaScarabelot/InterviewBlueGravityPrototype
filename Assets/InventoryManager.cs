@@ -35,6 +35,7 @@ public class InventoryManager : MonoBehaviour
             }
             inventoryItems = new ItemScriptableObject[inventorySlotsUI.Length];
         }
+        Invoke("CloseInventory",0.1f);
     }
 
     private void Update()

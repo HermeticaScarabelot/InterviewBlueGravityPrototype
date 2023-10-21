@@ -31,6 +31,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
     {
         playerEquipment = PlayerEquipment.PlayerEquipmentInstance;
         inventoryManager = InventoryManager.InventoryManagerInstance;
+
     }
 
     public void UpdateItemSlot(ItemScriptableObject newItem)

@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3720bd77-3678-450e-bc34-d3bafe3d2687" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DroppedOutfit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DroppedOutfit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/InventorySlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventorySlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Outfit 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Outfit 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Outfit.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Items/Outfit.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ItemScriptableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ItemScriptableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Outfit 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Outfit 1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Outfit 3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Outfit 3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Items/Outfit 6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Items/Outfit 6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697832997680</updated>
-      <workItem from="1697833020736" duration="32865000" />
+      <workItem from="1697833020736" duration="35154000" />
     </task>
     <servers />
   </component>
