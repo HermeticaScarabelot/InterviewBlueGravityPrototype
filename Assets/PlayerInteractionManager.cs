@@ -52,28 +52,6 @@ public class PlayerInteractionManager : MonoBehaviour
                 Interactable[] interactables = hits[0].collider.GetComponents<Interactable>();
                 CallInteractions(interactables);
             }
-            
-            /*
-            
-             List<GameObject> interactablesGo = new List<GameObject>();
-
-            foreach (var hit in hits)
-            {
-                interactablesGo.Add(hit.collider.gameObject);
-            }
-            
-            foreach (var hit in interactablesGo)
-            {
-                Debug.Log(hit.name);
-            }
-            
-            if (hits.Length <= 0)
-            {
-                return;
-            }
-            Destroy(hits[0].collider.gameObject);
-
-            */
 
         }
     }

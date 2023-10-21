@@ -9,6 +9,8 @@ public class Shop : Interactable
     [SerializeField] private bool hasDialogue;
     [SerializeField] private Dialogue dialogue;
 
+    private ShopManager shopManager;
+
     private void Awake()
     {
         if (hasDialogue)
@@ -16,6 +18,8 @@ public class Shop : Interactable
             dialogue = GetComponent<Dialogue>();
         }
     }
+    
+    
 
     public override void Interact()
     {
@@ -29,6 +33,7 @@ public class Shop : Interactable
 
     private void Start()
     {
+        shopManager = ShopManager.ShopManagerInstance;
         if (hasDialogue)
         {
             dialogue.OnDialogueFinished += ShopTest;
@@ -37,7 +42,7 @@ public class Shop : Interactable
 
     void ShopTest()
     {
-        Debug.Log("Shop Test");
+        shopManager.OpenShop();
     }
 
     private void OnDisable()

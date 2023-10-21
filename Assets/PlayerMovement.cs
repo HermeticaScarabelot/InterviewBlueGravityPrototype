@@ -42,7 +42,6 @@ public class PlayerMovement : MonoBehaviour
             
             UpdatePlayerDirection();
             FlipSprite();
-            Debug.Log("wtf");
             UpdateMovementAnimationState(PlayerAnimationController.PlayerState.Running);
         }
         else

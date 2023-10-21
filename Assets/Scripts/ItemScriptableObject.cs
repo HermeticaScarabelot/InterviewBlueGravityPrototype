@@ -24,6 +24,8 @@ public class ItemScriptableObject : ScriptableObject
     
     public string itemName;
     public Sprite itemSprite;
-    
+    public string itemDescription;
+    public int itemPrice;
+
 }
 
