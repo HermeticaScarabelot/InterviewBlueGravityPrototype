@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4be62f4aa39e8714ab4aed38aacdb070, type: 3}
-  m_Name: Outfit 6
+  m_Name: Helm  6
   m_EditorClassIdentifier: 
   type: 2
-  outfitType: 2
-  itemName: Outfit 6
-  itemSprite: {fileID: 21300000, guid: 250530d3e9754ed418009e3d539275b3, type: 3}
+  outfitType: 1
+  itemName: Helm 6
+  itemSprite: {fileID: 21300000, guid: 20eb058aea3c3a744bb5d47a1610550a, type: 3}
+  additionalSprites: []
+  itemDescription: 
+  itemPrice: 0

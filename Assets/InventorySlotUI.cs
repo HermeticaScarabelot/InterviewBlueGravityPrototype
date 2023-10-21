@@ -100,8 +100,14 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnte
     {
         switch (scriptableItem.outfitType)
         {
+            case ItemScriptableObject.OutfitPiece.Helm:
+                playerEquipment.EquipNewHelm(scriptableItem, slotId);
+                break;
             case ItemScriptableObject.OutfitPiece.Torso:
                 playerEquipment.EquipNewTorso(scriptableItem, slotId);
+                break;
+            case ItemScriptableObject.OutfitPiece.Legs:
+                playerEquipment.EquipNewLegs(scriptableItem, slotId);
                 break;
         }
         //inventoryManager.RemoveItemByIndex(slotId);

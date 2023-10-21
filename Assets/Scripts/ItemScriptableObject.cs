@@ -15,8 +15,9 @@ public class ItemScriptableObject : ScriptableObject
     public enum OutfitPiece
     {
         Null,
-        Head,
-        Torso
+        Helm,
+        Torso,
+        Legs
     }
 
     public ItemType type;
@@ -24,6 +25,7 @@ public class ItemScriptableObject : ScriptableObject
     
     public string itemName;
     public Sprite itemSprite;
+    public Sprite[] additionalSprites;
     public string itemDescription;
     public int itemPrice;
 
