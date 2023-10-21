@@ -36,6 +36,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
 
     public void UpdateItemSlot(ItemScriptableObject newItem)
     {
+        image.color = new Color(1, 1, 1, 1);
         scriptableItem = newItem;
         type = newItem.type;
         itemName = newItem.itemName;
@@ -50,6 +51,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
         itemName = "";
         itemSprite = null;
         image.sprite = null;
+        image.color = new Color(1, 1, 1, 0);
     }
 
 

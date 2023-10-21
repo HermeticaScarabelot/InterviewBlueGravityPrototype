@@ -6,11 +6,14 @@ using UnityEngine;
 public class PlayerEquipment : MonoBehaviour
 {
     public static PlayerEquipment PlayerEquipmentInstance;
-    
+
+    [SerializeField] private EquipmentSlotUI torsoSlotUI;
     [SerializeField] public SpriteRenderer torsoRenderer;
     [SerializeField] public ItemScriptableObject equippedTorso;
 
     private InventoryManager inventoryManager;
+
+    
     private void Awake()
     {
         PlayerEquipmentInstance = this;
@@ -21,10 +24,14 @@ public class PlayerEquipment : MonoBehaviour
         inventoryManager = InventoryManager.InventoryManagerInstance;
     }
 
-    public void EquipNewTorso(ItemScriptableObject newTorso, int newTorsoSlotId)
+    public void EquipNewTorso(ItemScriptableObject newTorso, int newTorsoSlotId=0)
     {
-        inventoryManager.AddItemToSlot(equippedTorso, newTorsoSlotId);
+        if (equippedTorso)
+        {
+            inventoryManager.AddItemToSlot(equippedTorso, newTorsoSlotId);
+        }
         equippedTorso = newTorso;
         torsoRenderer.sprite = equippedTorso.itemSprite;
+        torsoSlotUI.UpdateEquipmentSlot(newTorso);
     }
 }
