@@ -39,7 +39,8 @@ public class DialogueManager : MonoBehaviour
         isTyping = true;
         
         char[] allChars = line.ToCharArray();
-        foreach (var c in allChars)
+        
+        foreach (var c in allChars)//Slowly iterate through all Chars to display the Text char by char
         {
             textUGUI.text += c;
             yield return new WaitForSeconds(delayBetweenChar);

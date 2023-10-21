@@ -2559,6 +2559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: {fileID: 1296782537}
+  itemDescription: {fileID: 1872948267}
   image: {fileID: 1062863291}
 --- !u!114 &673220603
 MonoBehaviour:
@@ -3836,7 +3837,7 @@ GameObject:
   - component: {fileID: 1139227567}
   - component: {fileID: 1139227566}
   m_Layer: 5
-  m_Name: Text Panel
+  m_Name: Description Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7840,7 +7841,7 @@ GameObject:
   - component: {fileID: 1872948268}
   - component: {fileID: 1872948267}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Item Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

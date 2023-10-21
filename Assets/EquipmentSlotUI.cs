@@ -16,7 +16,7 @@ public class EquipmentSlotUI : MonoBehaviour
     
     [SerializeField] private EquipmentSlotType slotType;
     [SerializeField] private Sprite equipmentSprite;
-    public ItemScriptableObject equippedItem;
+    [SerializeField] private ItemScriptableObject equippedItem;
     
     [SerializeField] private Image image;
 
@@ -27,7 +27,7 @@ public class EquipmentSlotUI : MonoBehaviour
             image = transform.GetChild(0).GetComponent<Image>();
         }
 
-        if (equipmentSprite)
+        if (equippedItem)
         {
             image.sprite = equipmentSprite;
         }

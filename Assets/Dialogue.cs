@@ -36,11 +36,11 @@ public class Dialogue : Interactable
         if (lines.Length > linesIndex)
         {
             dialogueManager.ResetText();
-            dialogueManager.StartCoroutine(dialogueManager.TypeString(lines[linesIndex]));
+            dialogueManager.StartCoroutine(dialogueManager.TypeString(lines[linesIndex])); //Display Text Char by Char
             linesIndex++;
             Debug.Log(linesIndex + " / " + lines.Length );
         }
-        else if(linesIndex == lines.Length) //Last Line
+        else if(linesIndex == lines.Length) //Call all Listeners, used to call Interactions like the Shop opening after the initial Dialogue
         {
             OnDialogueFinished?.Invoke();
             dialogueManager.CloseDialogue();
@@ -49,11 +49,6 @@ public class Dialogue : Interactable
         }
     }
 
-    
-    public void CustomButtonClick()
-    {
-        Debug.Log("A");
-    }
 
 
 }

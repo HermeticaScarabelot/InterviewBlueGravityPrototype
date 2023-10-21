@@ -10,8 +10,8 @@ public class InventoryManager : MonoBehaviour
 
     [SerializeField] private GameObject inventoryGo;
     [SerializeField] private GameObject inventoryPanelGo;
+    [SerializeField] private InventorySlotUI[] inventorySlotsUI = new InventorySlotUI[0];
     
-    public InventorySlotUI[] inventorySlotsUI = new InventorySlotUI[0];
     public ItemScriptableObject[] inventoryItems = new ItemScriptableObject[0];
 
     public int heldItemSlotId;
@@ -30,12 +30,12 @@ public class InventoryManager : MonoBehaviour
         
         if (inventoryPanelGo)
         {
-            inventorySlotsUI = inventoryPanelGo.GetComponentsInChildren<InventorySlotUI>();
+            inventorySlotsUI = inventoryPanelGo.GetComponentsInChildren<InventorySlotUI>(); //Get all 24 Slots, then automatically set the Id on each one
             for (int i = 0; i < inventorySlotsUI.Length; i++)
             {
                 inventorySlotsUI[i].slotId = i;
             }
-            inventoryItems = new ItemScriptableObject[inventorySlotsUI.Length];
+            inventoryItems = new ItemScriptableObject[inventorySlotsUI.Length]; //Initialize the Inventory Items with null
         }
         Invoke("CloseInventory",0.1f);
     }
@@ -61,7 +61,7 @@ public class InventoryManager : MonoBehaviour
 
     public bool PickupItem(ItemScriptableObject item)
     {
-        for (int i = 0; i < inventoryItems.Length; i++)
+        for (int i = 0; i < inventoryItems.Length; i++) //Search for a Empty Slot, then place the Picked item in this Slot
         {
             if (inventoryItems[i] == null)
             {
@@ -73,31 +73,29 @@ public class InventoryManager : MonoBehaviour
         return false;
     }
 
-    public void AddItemToSlot(ItemScriptableObject item, int slotId)
+    public void AddItemToSlot(ItemScriptableObject item, int slotId) //Add Item to specific slot
     {
         inventoryItems[slotId] = item;
         inventorySlotsUI[slotId].UpdateItemSlot(item);
     }
 
-    public void SwapItemPosition(int newSlotID)
+    public void SwapItemPosition(int secondSlotID)
     {
-        ItemScriptableObject itemToNewSlot = inventoryItems[heldItemSlotId];
-        ItemScriptableObject itemToOldSlot = inventoryItems[newSlotID];
+        ItemScriptableObject firstItem = inventoryItems[heldItemSlotId];
+        ItemScriptableObject secondItem = inventoryItems[secondSlotID];
 
         RemoveItemByIndex(heldItemSlotId);//Remove First item
         
-        if (itemToOldSlot != null)
+        if (secondItem != null) //If second Slot isn't a empty Space, temporarily Remove it, then Add it to the First Slot
         {
-            RemoveItemByIndex(newSlotID); //If second Slot has a Item, also remove it
-        }
-        
-        AddItemToSlot(itemToNewSlot, newSlotID); //Add First item to second Slot
-        
-        if (itemToOldSlot != null)
-        {
-            AddItemToSlot(itemToOldSlot, heldItemSlotId); //Add second item to first slot ;
-        }
+            RemoveItemByIndex(secondSlotID); 
+            AddItemToSlot(secondItem, heldItemSlotId); //Add second item to first slot ;
 
+        }
+        
+        AddItemToSlot(firstItem, secondSlotID); //Add First item to second Slot
+        UpdateTooltip(firstItem);
+        
         holdingItem = false;
         heldItemSlotId = 0;
 
@@ -129,6 +127,11 @@ public class InventoryManager : MonoBehaviour
     public void UpdateTooltip(ItemScriptableObject item)
     {
         tooltipSlotUI.UpdateTooltipSlot(item);
+    }
+
+    public void ResetTooltip()
+    {
+        tooltipSlotUI.Reset();
     }
 
 }
