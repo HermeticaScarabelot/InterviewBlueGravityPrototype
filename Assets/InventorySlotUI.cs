@@ -56,11 +56,33 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
     {
         if (eventData.button == PointerEventData.InputButton.Right)
         {
-            RightClickItem();
+            UseItem();
+        }
+        
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            HoldItem();
+        }
+        
+    }
+
+    public void HoldItem()
+    {
+        if (!inventoryManager.holdingItem && type != ItemScriptableObject.ItemType.Empty)
+        {
+            inventoryManager.holdingItem = true;
+            inventoryManager.heldItemSlotId = slotId;
+        }
+        else if(inventoryManager.holdingItem)
+        {
+            Debug.Log(slotId);
+            inventoryManager.SwapItemPosition(slotId);
         }
     }
 
-    void RightClickItem()
+
+
+    void UseItem()
     {
         switch (type)
         {

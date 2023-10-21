@@ -13,7 +13,10 @@ public class InventoryManager : MonoBehaviour
     
     public InventorySlotUI[] inventorySlotsUI = new InventorySlotUI[0];
     public ItemScriptableObject[] inventoryItems = new ItemScriptableObject[0];
-        
+
+    public int heldItemSlotId;
+    public bool holdingItem;
+
     //public List<ScriptableObject> inventoryItems = new List<ScriptableObject>();
 
     private void Awake()
@@ -41,7 +44,6 @@ public class InventoryManager : MonoBehaviour
             OpenInventory();
         }
         
-        
     }
 
     public void OpenInventory()
@@ -68,6 +70,35 @@ public class InventoryManager : MonoBehaviour
         return false;
     }
 
+    void AddItemToSlot(ItemScriptableObject item, int slotId)
+    {
+        inventoryItems[slotId] = item;
+        inventorySlotsUI[slotId].UpdateItemSlot(item);
+    }
+
+    public void SwapItemPosition(int newSlotID)
+    {
+        ItemScriptableObject itemToNewSlot = inventoryItems[heldItemSlotId];
+        ItemScriptableObject itemToOldSlot = inventoryItems[newSlotID];
+
+        RemoveItemByIndex(heldItemSlotId);//Remove First item
+        
+        if (itemToOldSlot != null)
+        {
+            RemoveItemByIndex(newSlotID); //If second Slot has a Item, also remove it
+        }
+        
+        AddItemToSlot(itemToNewSlot, newSlotID); //Add First item to second Slot
+        
+        if (itemToOldSlot != null)
+        {
+            AddItemToSlot(itemToOldSlot, heldItemSlotId); //Add second item to first slot ;
+        }
+
+        holdingItem = false;
+        heldItemSlotId = 0;
+
+    }
     public bool RemoveItemByName(ItemScriptableObject item)
     {
         if (inventoryItems.Contains(item))
