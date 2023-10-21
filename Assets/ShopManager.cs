@@ -20,6 +20,7 @@ public class ShopManager : MonoBehaviour
 
     [SerializeField] private ItemScriptableObject[] activeShopItems;
     [SerializeField] public ItemScriptableObject selectedItem;
+    [SerializeField] public int selectedItemSlotId;
 
     [SerializeField] public TooltipSlotUI tooltipSlotUI;
     
@@ -93,14 +94,16 @@ public class ShopManager : MonoBehaviour
         }
     }
 
-    public void SelectItem(ItemScriptableObject item)
+    public void SelectItem(ItemScriptableObject item, int slotId)
     {
         selectedItem = item;
+        selectedItemSlotId = slotId;
     }
 
     public void DeSelectItem()
     {
         selectedItem = null;
+        selectedItemSlotId = 0;
         tooltipSlotUI.UpdateTooltipSlot(null);        
     }
     
@@ -125,11 +128,22 @@ public class ShopManager : MonoBehaviour
 
     public void PurchaseSelectedItem()
     {
-        
+        if (selectedItem == null)
+        {
+            return;
+        }
+        inventoryManager.PickupItem(selectedItem);
+        DeSelectItem();
     }
 
     public void SellSelectedItem()
     {
-        
+        if (selectedItem == null)
+        {
+            return;
+        }
+        inventoryManager.RemoveItemByIndex(selectedItemSlotId);
+        LoadInventory();
+        DeSelectItem();
     }
 }

@@ -57,7 +57,7 @@ public class PurchasableSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerCl
     {
         if (eventData.button == PointerEventData.InputButton.Left)
         {
-            shopManager.SelectItem(purchasableItem);
+            shopManager.SelectItem(purchasableItem, slotId);
             shopManager.tooltipSlotUI.UpdateTooltipSlot(purchasableItem);
         }
     }

@@ -2,9 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class InventorySlotShopUI : MonoBehaviour
+public class InventorySlotShopUI : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler
 {
     [SerializeField] private ItemScriptableObject inventorySlotShopItem;
     [SerializeField] public int slotId;
@@ -16,12 +17,18 @@ public class InventorySlotShopUI : MonoBehaviour
     private Image image;
     private Sprite defaultSpriteBg;
     
+    [SerializeField] private ShopManager shopManager;
+    
     private void Awake()
     {
         image = transform.GetChild(0).GetComponent<Image>();
         defaultSpriteBg = image.sprite;
     }
 
+    private void Start()
+    {
+        shopManager = ShopManager.ShopManagerInstance;
+    }
 
     public void LoadItem(InventoryManager inventoryManager)
     {
@@ -37,4 +44,21 @@ public class InventorySlotShopUI : MonoBehaviour
         }
     }
     
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (inventorySlotShopItem == null || shopManager.selectedItem == true)
+        {
+            return;
+        }
+        shopManager.tooltipSlotUI.UpdateTooltipSlot(inventorySlotShopItem);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (eventData.button == PointerEventData.InputButton.Left)
+        {
+            shopManager.SelectItem(inventorySlotShopItem, slotId);
+            shopManager.tooltipSlotUI.UpdateTooltipSlot(inventorySlotShopItem);
+        }
+    }
 }
