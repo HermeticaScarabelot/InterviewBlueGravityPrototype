@@ -8,16 +8,20 @@ public class ShopManager : MonoBehaviour
     public static ShopManager ShopManagerInstance;
 
     [SerializeField] private GameObject shopGo;
+    [SerializeField] private GameObject purchaseButton;
+    [SerializeField] private GameObject sellButton;
     
     [SerializeField] private GameObject purchasableSlotsPanel;
     [SerializeField] private PurchasableSlotUI[] purchasableSlotsUI;
 
     [SerializeField] private GameObject inventorySlotsShopPanel;
     [SerializeField] private InventorySlotShopUI[] inventorySlotsShopUI;
-
     [SerializeField] private InventoryManager inventoryManager;
 
     [SerializeField] private ItemScriptableObject[] activeShopItems;
+    [SerializeField] public ItemScriptableObject selectedItem;
+
+    [SerializeField] public TooltipSlotUI tooltipSlotUI;
     
     private void Awake()
     {
@@ -56,6 +60,7 @@ public class ShopManager : MonoBehaviour
 
     public void OpenShop(ItemScriptableObject[] itemsForSale)
     {
+        DeSelectItem();
         activeShopItems = itemsForSale;
         ChangeToPurchasable();
         shopGo.SetActive(true);
@@ -65,13 +70,18 @@ public class ShopManager : MonoBehaviour
 
     public void CloseShop()
     {
+        DeSelectItem();
         shopGo.SetActive(false);
     }
 
     public void ChangeToPurchasable()
     {
+        DeSelectItem();
         inventorySlotsShopPanel.SetActive(false);
+        sellButton.SetActive(false);
+        
         purchasableSlotsPanel.SetActive(true);
+        purchaseButton.SetActive(true);
         LoadShop();
     }
 
@@ -83,10 +93,25 @@ public class ShopManager : MonoBehaviour
         }
     }
 
+    public void SelectItem(ItemScriptableObject item)
+    {
+        selectedItem = item;
+    }
+
+    public void DeSelectItem()
+    {
+        selectedItem = null;
+        tooltipSlotUI.UpdateTooltipSlot(null);        
+    }
+    
     public void ChangeToSellable()
     {
+        DeSelectItem();
+        purchaseButton.SetActive(false);
         purchasableSlotsPanel.SetActive(false);
+        
         inventorySlotsShopPanel.SetActive(true);
+        sellButton.SetActive(true);
         LoadInventory();
     }
 
@@ -96,5 +121,15 @@ public class ShopManager : MonoBehaviour
         {
             inventorySlotsShopUI[i].LoadItem(inventoryManager);
         }
+    }
+
+    public void PurchaseSelectedItem()
+    {
+        
+    }
+
+    public void SellSelectedItem()
+    {
+        
     }
 }

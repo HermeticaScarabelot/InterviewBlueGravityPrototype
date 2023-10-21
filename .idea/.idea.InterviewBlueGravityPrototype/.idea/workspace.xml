@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3720bd77-3678-450e-bc34-d3bafe3d2687" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySlotShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventorySlotShopUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Retro Gaming SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Retro Gaming SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PurchasableSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PurchasableSlotUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ShopManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TooltipSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TooltipSlotUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697832997680</updated>
-      <workItem from="1697833020736" duration="48605000" />
+      <workItem from="1697833020736" duration="50424000" />
     </task>
     <servers />
   </component>

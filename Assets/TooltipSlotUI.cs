@@ -20,6 +20,12 @@ public class TooltipSlotUI : MonoBehaviour
 
     public void UpdateTooltipSlot(ItemScriptableObject item)
     {
+        if (item == null)
+        {
+            image.sprite = defaultSprite;
+            itemName.text = String.Empty;
+            return;
+        }
         image.sprite = item.itemSprite;
         itemName.text = item.name;
     }
