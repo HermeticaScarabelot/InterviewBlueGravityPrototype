@@ -32,6 +32,7 @@ public class Dialogue : Interactable
         {
             return;
         }
+        
         if (lines.Length > linesIndex)
         {
             dialogueManager.ResetText();

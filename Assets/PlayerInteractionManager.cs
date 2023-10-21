@@ -39,15 +39,44 @@ public class PlayerInteractionManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            Vector2 rayDirection = GetRayDirection();
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDirection, rayLength, interactionLayerMask);
             
-            if (hit.collider)
+            Vector2 rayDirection = GetRayDirection();
+            RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, rayDirection, rayLength, interactionLayerMask);
+
+            if (hits.Length <= 0)
             {
-                Interactable[] interactables = hit.collider.GetComponents<Interactable>();
-                CallInteractions(interactables);
- 
+                return;
             }
+                
+
+            if (hits[0].collider)
+            {
+                Interactable[] interactables = hits[0].collider.GetComponents<Interactable>();
+                CallInteractions(interactables);
+            }
+            
+            /*
+            
+             List<GameObject> interactablesGo = new List<GameObject>();
+
+            foreach (var hit in hits)
+            {
+                interactablesGo.Add(hit.collider.gameObject);
+            }
+            
+            foreach (var hit in interactablesGo)
+            {
+                Debug.Log(hit.name);
+            }
+            
+            if (hits.Length <= 0)
+            {
+                return;
+            }
+            Destroy(hits[0].collider.gameObject);
+
+            */
+
         }
     }
 
@@ -56,7 +85,7 @@ public class PlayerInteractionManager : MonoBehaviour
         Vector2 rayDirection = playerMovement.playerInputAxis;
         if (rayDirection == Vector2.zero) //If player is not moving, get the current Direction
         {
-            switch (playerMovement.facingDirection)
+            switch (playerMovement.direction)
             {
                 case FacingDirection.Up:
                     rayDirection = Vector2.up;

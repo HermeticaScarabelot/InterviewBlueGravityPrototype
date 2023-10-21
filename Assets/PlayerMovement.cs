@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Vector2 playerInputAxis;
     public float movementSpeed;
-    public PlayerInteractionManager.FacingDirection facingDirection;
+    public PlayerInteractionManager.FacingDirection direction;
 
     
     [SerializeField] private PlayerAnimationController playerAnimationController;
@@ -79,16 +79,16 @@ public class PlayerMovement : MonoBehaviour
         switch (playerInputAxis.normalized)
         {
             case Vector2 vec2 when vec2 == Vector2.up:
-                facingDirection = PlayerInteractionManager.FacingDirection.Up;
+                direction = PlayerInteractionManager.FacingDirection.Up;
                 break;
             case Vector2 vec2 when vec2 == Vector2.down:
-                facingDirection = PlayerInteractionManager.FacingDirection.Down;
+                direction = PlayerInteractionManager.FacingDirection.Down;
                 break;
             case Vector2 vec2 when vec2 == Vector2.right:
-                facingDirection = PlayerInteractionManager.FacingDirection.Right;
+                direction = PlayerInteractionManager.FacingDirection.Right;
                 break;
             case Vector2 vec2 when vec2 == Vector2.left:
-                facingDirection = PlayerInteractionManager.FacingDirection.Left;
+                direction = PlayerInteractionManager.FacingDirection.Left;
                 break;
         }
     }
