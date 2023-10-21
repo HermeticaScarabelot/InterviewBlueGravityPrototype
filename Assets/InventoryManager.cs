@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager InventoryManagerInstance;
 
+    [SerializeField] private int playerCurrency;
+    [SerializeField] private TextMeshProUGUI inventoryCurrencyDisplay;
     [SerializeField] private GameObject inventoryGo;
     [SerializeField] private GameObject inventoryPanelGo;
     [SerializeField] private InventorySlotUI[] inventorySlotsUI = new InventorySlotUI[0];
@@ -47,9 +50,15 @@ public class InventoryManager : MonoBehaviour
         
     }
 
+    public int GetPlayerCurrency()
+    {
+        return playerCurrency;
+    }
+
     public void OpenInventory()
     {
         inventoryGo.SetActive(true);
+        UpdateCurrencyUI();
     }
 
     public void CloseInventory()
@@ -130,6 +139,29 @@ public class InventoryManager : MonoBehaviour
     public void ResetTooltip()
     {
         tooltipSlotUI.Reset();
+    }
+
+    public bool SpendMoney(int price)
+    {
+        if (playerCurrency < price)
+        {
+            return false;
+        }
+        playerCurrency -= price;
+        UpdateCurrencyUI();
+        return true;
+    }
+
+    public void ReceiveMoney(int moneyToReceive)
+    {
+        playerCurrency += moneyToReceive;
+        UpdateCurrencyUI();
+    }
+
+    void UpdateCurrencyUI()
+    {
+        inventoryCurrencyDisplay.text = "$" + GetPlayerCurrency().ToString();
+
     }
 
 }

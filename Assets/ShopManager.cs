@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ShopManager : MonoBehaviour
@@ -21,6 +22,8 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private ItemScriptableObject[] activeShopItems;
     [SerializeField] public ItemScriptableObject selectedItem;
     [SerializeField] public int selectedItemSlotId;
+    [SerializeField] private TextMeshProUGUI shopCurrencyDisplay;
+
 
     [SerializeField] public TooltipSlotUI tooltipSlotUI;
     
@@ -65,6 +68,7 @@ public class ShopManager : MonoBehaviour
         activeShopItems = itemsForSale;
         ChangeToPurchasable();
         shopGo.SetActive(true);
+        UpdateCurrencyUI();
     }
 
 
@@ -132,8 +136,13 @@ public class ShopManager : MonoBehaviour
         {
             return;
         }
-        inventoryManager.PickupItem(selectedItem);
-        DeSelectItem();
+
+        if (inventoryManager.SpendMoney(selectedItem.itemPrice))
+        {
+            inventoryManager.PickupItem(selectedItem);
+            DeSelectItem();
+            UpdateCurrencyUI();
+        }
     }
 
     public void SellSelectedItem()
@@ -142,8 +151,15 @@ public class ShopManager : MonoBehaviour
         {
             return;
         }
+        inventoryManager.ReceiveMoney(selectedItem.itemPrice);
         inventoryManager.RemoveItemByIndex(selectedItemSlotId);
         LoadInventory();
         DeSelectItem();
+        UpdateCurrencyUI();
+    }
+
+    void UpdateCurrencyUI()
+    {
+        shopCurrencyDisplay.text = "$" + inventoryManager.GetPlayerCurrency().ToString();
     }
 }
