@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shop : MonoBehaviour
+public class Shop : Interactable
 {
     
     [SerializeField] private bool hasDialogue;
@@ -14,6 +14,15 @@ public class Shop : MonoBehaviour
         if (hasDialogue)
         {
             dialogue = GetComponent<Dialogue>();
+        }
+    }
+
+    public override void Interact()
+    {
+        base.Interact();
+        if (!hasDialogue)
+        {
+            ShopTest();
         }
     }
 

@@ -49,10 +49,6 @@ public class Dialogue : Interactable
         }
     }
 
-    public void FinishedDialogue()
-    {
-        
-    }
     
     public void CustomButtonClick()
     {
