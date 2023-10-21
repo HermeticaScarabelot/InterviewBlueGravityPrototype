@@ -8,7 +8,8 @@ public class Shop : Interactable
     
     [SerializeField] private bool hasDialogue;
     [SerializeField] private Dialogue dialogue;
-
+    [SerializeField] public ItemScriptableObject[] availableItemsForSale;
+ 
     private ShopManager shopManager;
 
     private void Awake()
@@ -42,7 +43,7 @@ public class Shop : Interactable
 
     void ShopTest()
     {
-        shopManager.OpenShop();
+        shopManager.OpenShop(availableItemsForSale);
     }
 
     private void OnDisable()

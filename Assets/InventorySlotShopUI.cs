@@ -25,8 +25,6 @@ public class InventorySlotShopUI : MonoBehaviour
 
     public void LoadItem(InventoryManager inventoryManager)
     {
-        Debug.Log(inventoryManager);
-        Debug.Log(inventoryManager.inventoryItems[slotId]);
         if (inventoryManager.inventoryItems[slotId] == null)
         {
             image.sprite = defaultSpriteBg;
