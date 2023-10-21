@@ -12,7 +12,6 @@ public class Dialogue : Interactable
     [SerializeField] public string[] lines;
     private int linesIndex = 0;
 
-    public bool isShop;
     private DialogueManager dialogueManager;
 
     private void Start()

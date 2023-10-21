@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public enum InteractableType
-    {
-        Dialogue,
-        Flower
-    }
-    
-    public InteractableType type;
+
 
     public virtual void Interact()
     {

@@ -36,8 +36,8 @@ public class DialogueManager : MonoBehaviour
         {
             dialoguePanel.SetActive(true);
         }
-        
         isTyping = true;
+        
         char[] allChars = line.ToCharArray();
         foreach (var c in allChars)
         {

@@ -7,7 +7,7 @@ public class Shop : Interactable
 {
     
     [SerializeField] private bool hasDialogue;
-    private Dialogue dialogue;
+    [SerializeField] private Dialogue dialogue;
 
     private void Awake()
     {
@@ -19,11 +19,12 @@ public class Shop : Interactable
 
     public override void Interact()
     {
-        base.Interact();
-        if (!hasDialogue)
+        if (hasDialogue)
         {
-            ShopTest();
+            return;
         }
+        base.Interact();
+        ShopTest();
     }
 
     private void Start()

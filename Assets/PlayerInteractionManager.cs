@@ -44,7 +44,9 @@ public class PlayerInteractionManager : MonoBehaviour
             
             if (hit.collider)
             {
-                hit.collider.GetComponent<Interactable>().Interact();
+                Interactable[] interactables = hit.collider.GetComponents<Interactable>();
+                CallInteractions(interactables);
+ 
             }
         }
     }
@@ -72,6 +74,18 @@ public class PlayerInteractionManager : MonoBehaviour
         }
 
         return rayDirection;
+    }
+
+    void CallInteractions(Interactable[] interactables)
+    {
+        foreach (var interactable in interactables)
+        {
+            if (interactable.isActiveAndEnabled)
+            {
+                interactable.Interact();
+
+            }
+        }
     }
 
 }
