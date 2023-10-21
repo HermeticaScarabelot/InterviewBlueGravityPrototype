@@ -23,20 +23,18 @@ public class InventoryManager : MonoBehaviour
 
     private void Awake()
     {
-        if (!InventoryManagerInstance)
-        {
-            InventoryManagerInstance = this;
-        }
+
+        InventoryManagerInstance = this;
         
-        if (inventoryPanelGo)
+        
+
+        inventorySlotsUI = inventoryPanelGo.GetComponentsInChildren<InventorySlotUI>(); //Get all 24 Slots, then automatically set the Id on each one
+        for (int i = 0; i < inventorySlotsUI.Length; i++)
         {
-            inventorySlotsUI = inventoryPanelGo.GetComponentsInChildren<InventorySlotUI>(); //Get all 24 Slots, then automatically set the Id on each one
-            for (int i = 0; i < inventorySlotsUI.Length; i++)
-            {
-                inventorySlotsUI[i].slotId = i;
-            }
-            inventoryItems = new ItemScriptableObject[inventorySlotsUI.Length]; //Initialize the Inventory Items with null
+            inventorySlotsUI[i].slotId = i;
         }
+        inventoryItems = new ItemScriptableObject[inventorySlotsUI.Length]; //Initialize the Inventory Items with null
+        
         Invoke("CloseInventory",0.1f);
     }
 

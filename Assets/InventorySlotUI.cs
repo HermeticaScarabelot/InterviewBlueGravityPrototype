@@ -21,10 +21,9 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnte
     
     private void Awake()
     {
-        if (transform.childCount > 0 && !image)
-        {
-            image = transform.GetChild(0).GetComponent<Image>();
-        }
+
+        image = transform.GetChild(0).GetComponent<Image>();
+        
     }
 
     private void Start()

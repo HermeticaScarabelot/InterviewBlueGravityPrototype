@@ -14,6 +14,8 @@ public class ShopManager : MonoBehaviour
 
     [SerializeField] private GameObject inventorySlotsShopPanel;
     [SerializeField] private InventorySlotShopUI[] inventorySlotsShopUI;
+
+    [SerializeField] private InventoryManager inventoryManager;
     
     private void Awake()
     {
@@ -31,17 +33,46 @@ public class ShopManager : MonoBehaviour
         for (int i = 0; i < inventorySlotsShop.Length; i++)
         {
             inventorySlotsShopUI[i] = inventorySlotsShop[i];
+            inventorySlotsShopUI[i].slotId = i;
         }
 
     }
 
+    private void Start()
+    {
+        inventoryManager = InventoryManager.InventoryManagerInstance;
+    }
+
     public void OpenShop()
     {
+        ChangeToPurchasable();
         shopGo.SetActive(true);
     }
 
-    void CloseShop()
+    public void CloseShop()
     {
         shopGo.SetActive(false);
+    }
+
+    public void ChangeToPurchasable()
+    {
+        inventorySlotsShopPanel.SetActive(false);
+        purchasableSlotsPanel.SetActive(true);
+        
+    }
+
+    public void ChangeToSellable()
+    {
+        purchasableSlotsPanel.SetActive(false);
+        inventorySlotsShopPanel.SetActive(true);
+        LoadInventory();
+    }
+
+    public void LoadInventory()
+    {
+        for (int i = 0; i < inventorySlotsShopUI.Length; i++)
+        {
+            inventorySlotsShopUI[i].LoadItem(inventoryManager);
+        }
     }
 }
