@@ -11,6 +11,7 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject inventoryPanelGo;
     
     public InventorySlotUI[] inventorySlotsUI = new InventorySlotUI[0];
+        
     public List<ScriptableObject> inventoryItems = new List<ScriptableObject>();
 
     private void Awake()
@@ -50,9 +51,7 @@ public class InventoryManager : MonoBehaviour
     {
         if (inventoryItems.Count < inventorySlotsUI.Length)
         {
-            Debug.Log(inventoryItems.Count);
             inventoryItems.Add(Instantiate(item));
-            Debug.Log(inventoryItems.Count);
 
             foreach (var inventorySlotUI in inventorySlotsUI)
             {
@@ -64,9 +63,16 @@ public class InventoryManager : MonoBehaviour
             }
             return true;
         }
-
         return false;
-
     }
-    
+
+    public bool RemoveItem(ItemScriptableObject item)
+    {
+        if (inventoryItems.Contains(item))
+        {
+            inventoryItems.IndexOf(item)
+            inventoryItems.Remove(item);
+        }
+    }
+
 }

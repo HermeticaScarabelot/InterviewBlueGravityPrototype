@@ -7,8 +7,9 @@ public class DroppedOutfit : Interactable
 {
 
 
-    public ItemScriptableObject itemScriptableObject;
-    public Sprite outfitSprite;
+    [SerializeField] private ItemScriptableObject itemScriptableObject;
+    [SerializeField] private Sprite outfitSprite;
+    
     private InventoryManager inventoryManager;
 
     private void Start()

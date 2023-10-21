@@ -13,8 +13,7 @@ public class PlayerInteractionManager : MonoBehaviour
         Left
     }
 
-    [SerializeField]
-    private float rayLength = 1;
+    [SerializeField] private float rayLength = 1;
 
     private PlayerMovement playerMovement;
     private LayerMask interactionLayerMask;
@@ -47,8 +46,7 @@ public class PlayerInteractionManager : MonoBehaviour
             {
                 return;
             }
-                
-
+            
             if (hits[0].collider)
             {
                 Interactable[] interactables = hits[0].collider.GetComponents<Interactable>();
