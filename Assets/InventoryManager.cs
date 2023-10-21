@@ -70,7 +70,7 @@ public class InventoryManager : MonoBehaviour
         return false;
     }
 
-    void AddItemToSlot(ItemScriptableObject item, int slotId)
+    public void AddItemToSlot(ItemScriptableObject item, int slotId)
     {
         inventoryItems[slotId] = item;
         inventorySlotsUI[slotId].UpdateItemSlot(item);

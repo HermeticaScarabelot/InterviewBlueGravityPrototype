@@ -17,9 +17,8 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
     [SerializeField] private Image image;
 
     private InventoryManager inventoryManager;
+    private PlayerEquipment playerEquipment;
     
-    
-    public SpriteRenderer testPlayerTorsoSprite;
     private void Awake()
     {
         if (transform.childCount > 0 && !image)
@@ -30,6 +29,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
+        playerEquipment = PlayerEquipment.PlayerEquipmentInstance;
         inventoryManager = InventoryManager.InventoryManagerInstance;
     }
 
@@ -89,11 +89,22 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler
             case ItemScriptableObject.ItemType.Empty:
                 return;
             case ItemScriptableObject.ItemType.Outfit:
-                testPlayerTorsoSprite.sprite = scriptableItem.itemSprite;
-                inventoryManager.RemoveItemByIndex(slotId);
-                Debug.Log("ChangeOutfit");
+                EquipOutfit();
                 break;
         }
+    }
+
+    void EquipOutfit()
+    {
+        switch (scriptableItem.outfitType)
+        {
+            case ItemScriptableObject.OutfitPiece.Torso:
+                playerEquipment.EquipNewTorso(scriptableItem, slotId);
+                break;
+        }
+        //inventoryManager.RemoveItemByIndex(slotId);
+
+
     }
     
 }

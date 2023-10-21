@@ -12,7 +12,16 @@ public class ItemScriptableObject : ScriptableObject
         Outfit
     }
 
+    public enum OutfitPiece
+    {
+        Null,
+        Head,
+        Torso
+    }
+
     public ItemType type;
+    public OutfitPiece outfitType;
+    
     public string itemName;
     public Sprite itemSprite;
     
