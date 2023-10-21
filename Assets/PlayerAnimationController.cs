@@ -21,7 +21,7 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField] private AnimationClip runAnimation;
     [SerializeField] private AnimationClip attackAnimation;
 
-    private PlayerMovement playerMovement;
+    [SerializeField] private PlayerMovement playerMovement;
     
     private void Awake()
     {
@@ -51,7 +51,6 @@ public class PlayerAnimationController : MonoBehaviour
         inSpecialPlayerState = true;
         playerAnimator.Play(attackAnimation.name);
         yield return new WaitForSeconds(attackAnimation.length);
-        activePlayerState = PlayerState.Idle;
         inSpecialPlayerState = false;
     }
 

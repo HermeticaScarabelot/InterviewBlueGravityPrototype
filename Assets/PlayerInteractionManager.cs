@@ -44,7 +44,7 @@ public class PlayerInteractionManager : MonoBehaviour
             
             if (hit.collider)
             {
-                Debug.Log("batata");
+                hit.collider.GetComponent<Interactable>().Interact();
             }
         }
     }

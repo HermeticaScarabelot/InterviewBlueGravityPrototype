@@ -8,10 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 playerInputAxis;
     public float movementSpeed;
     public PlayerInteractionManager.FacingDirection facingDirection;
-    
 
-    [SerializeField]
-    private PlayerAnimationController playerAnimationController;
+    
+    [SerializeField] private PlayerAnimationController playerAnimationController;
 
     private Vector3 defaultScale;
 
