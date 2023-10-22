@@ -17,10 +17,11 @@ public class PlayerInteractionManager : MonoBehaviour
 
     private PlayerMovement playerMovement;
     private LayerMask interactionLayerMask;
-
+    private Camera cam;
 
     private void Awake()
     {
+        cam = Camera.main;
         interactionLayerMask = LayerMask.GetMask("Interactable");
         if (!playerMovement)
         {
@@ -38,7 +39,6 @@ public class PlayerInteractionManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            
             Vector2 rayDirection = GetRayDirection();
             RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, rayDirection, rayLength, interactionLayerMask);
 
@@ -52,7 +52,27 @@ public class PlayerInteractionManager : MonoBehaviour
                 Interactable[] interactables = hits[0].collider.GetComponents<Interactable>();
                 CallInteractions(interactables);
             }
+        }
 
+        if (Input.GetMouseButtonDown(1))
+        {
+            Vector3 mousePos = Input.mousePosition;
+            mousePos = cam.ScreenToWorldPoint(mousePos);
+            mousePos.z = 0;
+            var direction = mousePos - transform.position;
+            direction.Normalize();
+            RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, direction, rayLength, interactionLayerMask);
+
+            if (hits.Length <= 0)
+            {
+                return;
+            }
+            
+            if (hits[0].collider)
+            {
+                Interactable[] interactables = hits[0].collider.GetComponents<Interactable>();
+                CallInteractions(interactables);
+            }
         }
     }
 

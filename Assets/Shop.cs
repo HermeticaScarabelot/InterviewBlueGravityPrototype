@@ -24,6 +24,8 @@ public class Shop : Interactable
 
     public override void Interact()
     {
+        interactedRecently = true;
+
         if (hasDialogue)
         {
             return;
@@ -38,6 +40,20 @@ public class Shop : Interactable
         if (hasDialogue)
         {
             dialogue.OnDialogueFinished += ShopTest;
+        }
+    }
+    
+    private void Update()
+    {
+        if (interactedRecently)
+        {
+            var distanceFromPlayer = Vector2.Distance(shopManager.playerGo.transform.position, transform.position);
+            Debug.Log(distanceFromPlayer);
+            if (distanceFromPlayer > 2)
+            {
+                interactedRecently = false;
+                shopManager.CloseShop();
+            }
         }
     }
 

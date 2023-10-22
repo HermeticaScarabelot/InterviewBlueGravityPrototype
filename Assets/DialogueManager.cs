@@ -17,11 +17,20 @@ public class DialogueManager : MonoBehaviour
     public Button dialogueButton;
     public bool isTyping;
 
+    [SerializeField] public GameObject playerGo;
+
+
     private void Awake()
     {
         if (!DialogueManagerInstance)
         {
             DialogueManagerInstance = this;
+        }
+
+        if (!playerGo)
+        {
+            playerGo = GameObject.FindGameObjectWithTag("Player");
+            
         }
     }
 

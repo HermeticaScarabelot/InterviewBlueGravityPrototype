@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Dialogue : Interactable
@@ -23,7 +24,23 @@ public class Dialogue : Interactable
     public override void Interact()
     {
         base.Interact();
+        interactedRecently = true;
         NextLine();
+    }
+
+    private void Update()
+    {
+        if (interactedRecently)
+        {
+            var distanceFromPlayer = Vector2.Distance(dialogueManager.playerGo.transform.position, transform.position);
+            Debug.Log(distanceFromPlayer);
+            if (distanceFromPlayer > 2)
+            {
+                interactedRecently = false;
+                linesIndex = 0;
+                dialogueManager.CloseDialogue();
+            }
+        }
     }
 
     public void NextLine()

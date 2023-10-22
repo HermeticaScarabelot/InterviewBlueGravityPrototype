@@ -24,6 +24,7 @@ public class ShopManager : MonoBehaviour
     [SerializeField] public int selectedItemSlotId;
     [SerializeField] private TextMeshProUGUI shopCurrencyDisplay;
 
+    [SerializeField] public GameObject playerGo;
 
     [SerializeField] public TooltipSlotUI tooltipSlotUI;
     
@@ -49,6 +50,11 @@ public class ShopManager : MonoBehaviour
         if (shopGo.activeSelf)
         {
             Invoke("DeActivateShopOnStart", 0.15f);
+        }
+
+        if (!playerGo)
+        {
+            playerGo = GameObject.FindGameObjectWithTag("Player");
         }
     }
 

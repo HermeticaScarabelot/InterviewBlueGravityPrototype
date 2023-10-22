@@ -5,6 +5,7 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
 
+    public bool interactedRecently;
 
     public virtual void Interact()
     {
