@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3720bd77-3678-450e-bc34-d3bafe3d2687" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInteractionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerInteractionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Retro Gaming SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Retro Gaming SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ShopManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +14,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10871f9e312b442cb78b9b97db88fdcb172a00/c1/94223e50/Color.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DateDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Dialogue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DialogueManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DroppedOutfit.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697832997680</updated>
-      <workItem from="1697833020736" duration="57729000" />
+      <workItem from="1697833020736" duration="59103000" />
     </task>
     <servers />
   </component>
