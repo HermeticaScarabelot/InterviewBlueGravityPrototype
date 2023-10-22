@@ -8,7 +8,7 @@ public class ShopManager : MonoBehaviour
 {
     public static ShopManager ShopManagerInstance;
 
-    [SerializeField] private GameObject shopGo;
+    [SerializeField] public GameObject shopGo;
     [SerializeField] private GameObject purchaseButton;
     [SerializeField] private GameObject sellButton;
     

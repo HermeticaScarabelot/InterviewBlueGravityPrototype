@@ -45,7 +45,7 @@ public class Dialogue : Interactable
 
     public void NextLine()
     {
-        if (dialogueManager.isTyping)
+        if (dialogueManager.isTyping || dialogueManager.shopManager.shopGo.activeSelf)
         {
             return;
         }

@@ -18,7 +18,7 @@ public class DialogueManager : MonoBehaviour
     public bool isTyping;
 
     [SerializeField] public GameObject playerGo;
-
+    [SerializeField] public ShopManager shopManager;
 
     private void Awake()
     {
@@ -32,6 +32,12 @@ public class DialogueManager : MonoBehaviour
             playerGo = GameObject.FindGameObjectWithTag("Player");
             
         }
+    }
+
+
+    private void Start()
+    {
+        shopManager = ShopManager.ShopManagerInstance;
     }
 
     public void ResetText()
