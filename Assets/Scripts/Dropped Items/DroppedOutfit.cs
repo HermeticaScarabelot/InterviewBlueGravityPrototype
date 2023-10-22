@@ -22,6 +22,8 @@ public class DroppedOutfit : Interactable
     public override void Interact()
     {
         base.Interact();
+        
+        //Check if there's space in the Inventory before Picking Up the Item
         if (inventoryManager.PickupItem(itemScriptableObject))
         {
             Destroy(this.gameObject);

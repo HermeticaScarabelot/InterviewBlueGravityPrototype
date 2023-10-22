@@ -10,9 +10,9 @@ public class Dialogue : Interactable
     public event DialogueFinishedEventHandler OnDialogueFinished;
     
     
-    [SerializeField] public string[] lines;
+    [SerializeField] public string[] lines; //Array of all the Dialogue Lines, set up through Inspector
     private int linesIndex = 0;
-    [SerializeField] private GameObject interactTextGo;
+    [SerializeField] private GameObject interactTextGo; //Interact Text Overhead
 
     
     private DialogueManager dialogueManager;
@@ -28,7 +28,7 @@ public class Dialogue : Interactable
     {
         base.Interact();
         interactedRecently = true;
-        NextLine();
+        NextLine(); //Start the Dialogue
     }
 
     private void Update()
@@ -38,7 +38,7 @@ public class Dialogue : Interactable
         
         if (interactedRecently)
         {
-            Debug.Log(distanceFromPlayer);
+            //If the Player moves away, reset the Dialogue
             if (distanceFromPlayer > 2)
             {
                 interactedRecently = false;
@@ -48,6 +48,7 @@ public class Dialogue : Interactable
         }
     }
 
+    // Toggle the visibility of Overhead Interact Text
     void UpdateInteractText()
     {
         if (distanceFromPlayer > 2 && interactTextGo.activeSelf)
@@ -79,7 +80,6 @@ public class Dialogue : Interactable
             OnDialogueFinished?.Invoke();
             dialogueManager.CloseDialogue();
             linesIndex = 0;
-            //ShopManager.ShopManagerInstance.OpenShop();
         }
     }
 

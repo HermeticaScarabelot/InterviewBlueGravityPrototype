@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInteractionManager : MonoBehaviour
-{  
+{
     public enum FacingDirection
     {
         Up,
@@ -13,14 +13,15 @@ public class PlayerInteractionManager : MonoBehaviour
         Left
     }
 
-    [SerializeField] private float rayLength = 1;
+    [SerializeField] private float rayLength = 1; //Raycast Length
 
     private PlayerMovement playerMovement;
-    private LayerMask interactionLayerMask;
+    private LayerMask interactionLayerMask; //Only cast on Interactable Layer
     private Camera cam;
 
     private void Awake()
     {
+        // Initialize references and settings when the object is created
         cam = Camera.main;
         interactionLayerMask = LayerMask.GetMask("Interactable");
         if (!playerMovement)
@@ -31,7 +32,7 @@ public class PlayerInteractionManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.DrawLine(transform.position,(Vector3)GetRayDirection() + transform.position);
+        //Debug.DrawLine(transform.position,(Vector3)GetRayDirection() + transform.position);
         CastInteractionRay();
     }
 
@@ -53,7 +54,8 @@ public class PlayerInteractionManager : MonoBehaviour
                 CallInteractions(interactables);
             }
         }
-
+        
+        // Interaction using right mouse button
         if (Input.GetMouseButtonDown(1))
         {
             Vector3 mousePos = Input.mousePosition;
@@ -75,7 +77,8 @@ public class PlayerInteractionManager : MonoBehaviour
             }
         }
     }
-
+    
+    // Determine the ray direction based on player input and facing direction
     Vector2 GetRayDirection()
     {
         Vector2 rayDirection = playerMovement.playerInputAxis;
@@ -100,7 +103,8 @@ public class PlayerInteractionManager : MonoBehaviour
 
         return rayDirection;
     }
-
+    
+    // Call the "Interact" method on interactable objects
     void CallInteractions(Interactable[] interactables)
     {
         foreach (var interactable in interactables)

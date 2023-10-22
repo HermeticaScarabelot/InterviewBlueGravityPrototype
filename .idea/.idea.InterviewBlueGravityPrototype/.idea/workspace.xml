@@ -2,13 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3720bd77-3678-450e-bc34-d3bafe3d2687" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dropped Items.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dialogue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EquipmentSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EquipmentSlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventoryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InventorySlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TooltipSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TooltipSlotUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CameraFollow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CameraFollow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CameraFollow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DateDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DateDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DateDisplay.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DateDisplay.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Dialogue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dialogue.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Dialogue.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogueManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogueManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DroppedOutfit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dropped Items/DroppedOutfit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DroppedOutfit.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dropped Items/DroppedOutfit.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EquipmentSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/EquipmentSlotUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EquipmentSlotUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/EquipmentSlotUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HotbarSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HotbarSlotUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/HotbarSlotUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HotbarSlotUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Interactable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Interactable.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventoryManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventorySlotShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotShopUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventorySlotShopUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotShopUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventorySlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InventorySlotUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Item.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Outfit.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Outfit.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerAnimationController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerEquipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerEquipment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerEquipment.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerEquipment.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInteractionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerInteractionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInteractionManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerInteractionManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PurchasableSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PurchasableSlotUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PurchasableSlotUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PurchasableSlotUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Shop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shop.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Shop.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ShopManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ShopManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ShopManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TooltipSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TooltipSlotUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TooltipSlotUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TooltipSlotUI.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,26 +59,29 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10871f9e312b442cb78b9b97db88fdcb172a00/c1/94223e50/Color.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DateDisplay.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Dialogue.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DialogueManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DroppedOutfit.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/EquipmentSlotUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/HotbarSlotUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/InventoryManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/InventorySlotShopUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PlayerAnimationController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PlayerEquipment.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/PurchasableSlotUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dropped Items/DroppedOutfit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/Dialogue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/DialogueManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/Shop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/EquipmentSlotUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotShopUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemScriptableObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Shop.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ShopManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerEquipment.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DateDisplay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/HotbarSlotUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/PurchasableSlotUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2X2hGrjRsw7K1hloiW1mgamkqYt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -90,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697832997680</updated>
-      <workItem from="1697833020736" duration="64762000" />
+      <workItem from="1697833020736" duration="67008000" />
     </task>
     <servers />
   </component>

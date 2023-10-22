@@ -2388,7 +2388,7 @@ GameObject:
   - component: {fileID: 282655121}
   - component: {fileID: 282655120}
   m_Layer: 6
-  m_Name: GameObject
+  m_Name: Floating Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2545,7 +2545,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &283724393
 GameObject:
@@ -5080,7 +5080,7 @@ GameObject:
   - component: {fileID: 530216867}
   - component: {fileID: 530216866}
   m_Layer: 6
-  m_Name: GameObject (2)
+  m_Name: Floating Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5218,7 +5218,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &530216868
 RectTransform:
@@ -94879,53 +94879,6 @@ MonoBehaviour:
   itemDescription: 
   itemPrice: 0
   shopManager: {fileID: 0}
---- !u!1 &1532771918
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1532771920}
-  - component: {fileID: 1532771919}
-  m_Layer: 0
-  m_Name: FirstMessage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1532771919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532771918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 570b7bb3104467940a73b2c07cef1942, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactedRecently: 0
-  lines: []
-  interactTextGo: {fileID: 0}
---- !u!4 &1532771920
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532771918}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.29124853, y: 2.9812493, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1553530946
 GameObject:
   m_ObjectHideFlags: 0
@@ -98667,7 +98620,7 @@ GameObject:
   - component: {fileID: 1801486759}
   - component: {fileID: 1801486758}
   m_Layer: 6
-  m_Name: GameObject (1)
+  m_Name: Floating Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98805,7 +98758,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!224 &1801486760
 RectTransform:
@@ -101789,4 +101742,3 @@ SceneRoots:
   - {fileID: 1771535963}
   - {fileID: 1197218790}
   - {fileID: 646001481}
-  - {fileID: 1532771920}

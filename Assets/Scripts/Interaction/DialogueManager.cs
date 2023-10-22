@@ -10,12 +10,12 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager DialogueManagerInstance;
     
     [SerializeField] private GameObject dialoguePanel;
-    [SerializeField] private TextMeshProUGUI textUGUI;
+    [SerializeField] private TextMeshProUGUI textUGUI; //Dialogue Text
     [SerializeField] private float delayBetweenChar;
 
 
     public Button dialogueButton;
-    public bool isTyping;
+    public bool isTyping; // Indicates whether the text is currently being typed
 
     [SerializeField] public GameObject playerGo;
     [SerializeField] public ShopManager shopManager;
@@ -34,6 +34,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    // Check if the dialogue panel is active, indicating if there's an active dialogue
     public bool IsInDialogue()
     {
         if (dialoguePanel.activeSelf)
