@@ -32,6 +32,7 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnte
 
     private void Start()
     {
+        //Find Singletons
         playerEquipment = PlayerEquipment.PlayerEquipmentInstance;
         inventoryManager = InventoryManager.InventoryManagerInstance;
 
@@ -74,12 +75,13 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnte
 
     public void HoldItem()
     {
+        
         if (!inventoryManager.holdingItem && type != ItemScriptableObject.ItemType.Empty)
         {
             inventoryManager.holdingItem = true;
             inventoryManager.heldItemSlotId = slotId;
         }
-        else if(inventoryManager.holdingItem)
+        else if(inventoryManager.holdingItem) // If already holding item, swap the Item Positions
         {
             Debug.Log(slotId);
             inventoryManager.SwapItemPosition(slotId);
@@ -114,7 +116,6 @@ public class InventorySlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnte
                 playerEquipment.EquipNewLegs(scriptableItem, slotId);
                 break;
         }
-        //inventoryManager.RemoveItemByIndex(slotId);
         
     }
 

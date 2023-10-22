@@ -32,10 +32,10 @@ public class PurchasableSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerCl
 
     public void LoadItem(ItemScriptableObject itemToLoad)
     {
+        //Load each item from each Shop Slot
         if (itemToLoad == null)
         {
             image.sprite = defaultSpriteBg;
-            Debug.Log("empty slot");
         }
         else
         {
@@ -57,6 +57,7 @@ public class PurchasableSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerCl
     {
         if (eventData.button == PointerEventData.InputButton.Left)
         {
+            //Make sure to select the Item so the ShopManager can have a function to buy any Selected Item
             shopManager.SelectItem(purchasableItem, slotId);
             shopManager.tooltipSlotUI.UpdateTooltipSlot(purchasableItem);
         }

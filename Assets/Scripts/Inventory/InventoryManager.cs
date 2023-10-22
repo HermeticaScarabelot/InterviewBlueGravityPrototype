@@ -11,19 +11,27 @@ public class InventoryManager : MonoBehaviour
 {
     public static InventoryManager InventoryManagerInstance;
 
+    
+    [Header("Currency")]
     [SerializeField] private int playerCurrency;
     [SerializeField] private TextMeshProUGUI topRightCurrencyDisplay;
     [SerializeField] private TextMeshProUGUI inventoryCurrencyDisplay;
+    
+    
+    [Header("Inventory")]
     [SerializeField] private GameObject inventoryGo;
     [SerializeField] private GameObject inventoryPanelGo;
     [SerializeField] private InventorySlotUI[] inventorySlotsUI = new InventorySlotUI[0];
     public ItemScriptableObject[] inventoryItems = new ItemScriptableObject[0];
 
+    [Header("Selected/Held Items")]
     public int heldItemSlotId;
     public bool holdingItem;
 
     [SerializeField] private TooltipSlotUI tooltipSlotUI;
 
+    
+    [Header("Tween")]
     [SerializeField] private float tweenScaleDuration;
     [SerializeField] private Ease tweenEase;
     [SerializeField] private bool isTweening;

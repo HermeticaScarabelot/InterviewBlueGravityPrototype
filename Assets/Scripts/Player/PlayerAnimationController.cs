@@ -35,6 +35,7 @@ public class PlayerAnimationController : MonoBehaviour
     {
         UpdateIdleRunAnimation();
 
+        //Special
         if (Input.GetKeyDown(KeyCode.T))
         {
             StartCoroutine("PlayAttack");
@@ -43,10 +44,12 @@ public class PlayerAnimationController : MonoBehaviour
 
     IEnumerator PlayAttack()
     {
+        //If already attacking, just exit
         if (activePlayerState == PlayerState.Attacking || inSpecialPlayerState)
         {
             yield break;
         }
+        
         activePlayerState = PlayerState.Attacking;
         inSpecialPlayerState = true;
         playerAnimator.Play(attackAnimation.name);
@@ -57,6 +60,7 @@ public class PlayerAnimationController : MonoBehaviour
 
     void UpdateIdleRunAnimation()
     {
+        //Prioritize Special Animation
         if (inSpecialPlayerState)
         {
             return;

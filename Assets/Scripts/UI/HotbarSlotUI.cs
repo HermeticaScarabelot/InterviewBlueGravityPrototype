@@ -50,6 +50,7 @@ public class HotbarSlotUI : MonoBehaviour, IPointerClickHandler
 
     public void PlaceItemInHotbar()
     {
+        //Places the already held Item in the Hotbar
         if (inventoryManager.holdingItem && scriptableItem == null)
         {
             scriptableItem = inventoryManager.inventoryItems[inventoryManager.heldItemSlotId];

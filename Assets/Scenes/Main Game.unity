@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 5544583}
   - component: {fileID: 5544586}
   m_Layer: 5
-  m_Name: Inventory Slot (16)
+  m_Name: Inventory Slot (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 11624295}
   - component: {fileID: 11624298}
   m_Layer: 5
-  m_Name: Image (13)
+  m_Name: Purchasable 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 50768841}
   - component: {fileID: 50768844}
   m_Layer: 5
-  m_Name: Image (21)
+  m_Name: Purchasable 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -473,7 +473,7 @@ GameObject:
   - component: {fileID: 68225051}
   - component: {fileID: 68225050}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: Slot 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -569,7 +569,7 @@ GameObject:
   - component: {fileID: 70463243}
   - component: {fileID: 70463242}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 137347522}
   - component: {fileID: 137347525}
   m_Layer: 5
-  m_Name: Inventory Slot (21)
+  m_Name: Inventory Slot (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1337,7 +1337,7 @@ GameObject:
   - component: {fileID: 160891475}
   - component: {fileID: 160891478}
   m_Layer: 5
-  m_Name: Image (17)
+  m_Name: Purchasable 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1452,7 +1452,7 @@ GameObject:
   - component: {fileID: 201772776}
   - component: {fileID: 201772775}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1605,7 +1605,7 @@ GameObject:
   - component: {fileID: 211885983}
   - component: {fileID: 211885986}
   m_Layer: 5
-  m_Name: Image (23)
+  m_Name: Purchasable 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3138,7 +3138,7 @@ GameObject:
   - component: {fileID: 324249535}
   - component: {fileID: 324249538}
   m_Layer: 5
-  m_Name: Image (6)
+  m_Name: Inventory Slot Shop 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3398,7 +3398,7 @@ GameObject:
   - component: {fileID: 344189294}
   - component: {fileID: 344189293}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Purchase Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3533,7 +3533,7 @@ GameObject:
   - component: {fileID: 347833679}
   - component: {fileID: 347833678}
   m_Layer: 5
-  m_Name: Image (7)
+  m_Name: Slot 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3706,7 +3706,7 @@ GameObject:
   - component: {fileID: 353722819}
   - component: {fileID: 353722822}
   m_Layer: 5
-  m_Name: Inventory Slot (18)
+  m_Name: Inventory Slot (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3949,7 +3949,7 @@ GameObject:
   - component: {fileID: 395093559}
   - component: {fileID: 395093558}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Sell Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4424,7 +4424,7 @@ GameObject:
   - component: {fileID: 470336116}
   - component: {fileID: 470336119}
   m_Layer: 5
-  m_Name: Image (8)
+  m_Name: Inventory Slot Shop 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4847,7 +4847,7 @@ GameObject:
   - component: {fileID: 495742525}
   - component: {fileID: 495742524}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4929,7 +4929,7 @@ GameObject:
   - component: {fileID: 502460153}
   - component: {fileID: 502460156}
   m_Layer: 5
-  m_Name: Image (23)
+  m_Name: Inventory Slot Shop 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5439,7 +5439,7 @@ GameObject:
   - component: {fileID: 533614807}
   - component: {fileID: 533614810}
   m_Layer: 5
-  m_Name: Image (10)
+  m_Name: Inventory Slot Shop 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5641,7 +5641,7 @@ GameObject:
   - component: {fileID: 541199190}
   - component: {fileID: 541199193}
   m_Layer: 5
-  m_Name: Image (7)
+  m_Name: Purchasable 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6006,7 +6006,7 @@ GameObject:
   - component: {fileID: 559319230}
   - component: {fileID: 559319229}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Currency Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6140,7 +6140,7 @@ GameObject:
   - component: {fileID: 564867430}
   - component: {fileID: 564867429}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7276,7 +7276,7 @@ GameObject:
   - component: {fileID: 634166927}
   - component: {fileID: 634166930}
   m_Layer: 5
-  m_Name: Image (14)
+  m_Name: Inventory Slot Shop 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7973,7 +7973,7 @@ GameObject:
   - component: {fileID: 719030540}
   - component: {fileID: 719030543}
   m_Layer: 5
-  m_Name: Image (19)
+  m_Name: Purchasable 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8085,7 +8085,7 @@ GameObject:
   - component: {fileID: 723913644}
   - component: {fileID: 723913647}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: Purchasable 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8329,7 +8329,7 @@ GameObject:
   - component: {fileID: 750333753}
   - component: {fileID: 750333752}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Sell Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8674,7 +8674,7 @@ GameObject:
   - component: {fileID: 780285618}
   - component: {fileID: 780285621}
   m_Layer: 5
-  m_Name: Image (20)
+  m_Name: Purchasable 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8786,7 +8786,7 @@ GameObject:
   - component: {fileID: 785097268}
   - component: {fileID: 785097271}
   m_Layer: 5
-  m_Name: Image (12)
+  m_Name: Inventory Slot Shop 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8898,7 +8898,7 @@ GameObject:
   - component: {fileID: 795470021}
   - component: {fileID: 795470024}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: Inventory Slot Shop 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9196,7 +9196,7 @@ GameObject:
   - component: {fileID: 830822032}
   - component: {fileID: 830822035}
   m_Layer: 5
-  m_Name: Image (14)
+  m_Name: Purchasable 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9381,7 +9381,7 @@ GameObject:
   - component: {fileID: 839506813}
   - component: {fileID: 839506812}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Purchase Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9763,7 +9763,7 @@ GameObject:
   - component: {fileID: 908034663}
   - component: {fileID: 908034666}
   m_Layer: 5
-  m_Name: Image (16)
+  m_Name: Purchasable 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9879,7 +9879,7 @@ GameObject:
   - component: {fileID: 926525214}
   - component: {fileID: 926525213}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Slot 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10052,7 +10052,7 @@ GameObject:
   - component: {fileID: 944573501}
   - component: {fileID: 944573504}
   m_Layer: 5
-  m_Name: Image (8)
+  m_Name: Purchasable 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10538,7 +10538,7 @@ GameObject:
   - component: {fileID: 975552910}
   - component: {fileID: 975552913}
   m_Layer: 5
-  m_Name: Inventory Slot (23)
+  m_Name: Inventory Slot (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10651,7 +10651,7 @@ GameObject:
   - component: {fileID: 976832175}
   - component: {fileID: 976832178}
   m_Layer: 5
-  m_Name: Image (15)
+  m_Name: Inventory Slot Shop 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10762,7 +10762,7 @@ GameObject:
   - component: {fileID: 1010715865}
   - component: {fileID: 1010715864}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Panel Layout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11119,7 +11119,7 @@ GameObject:
   - component: {fileID: 1044653524}
   - component: {fileID: 1044653527}
   m_Layer: 5
-  m_Name: Image (18)
+  m_Name: Inventory Slot Shop 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11230,7 +11230,7 @@ GameObject:
   - component: {fileID: 1056487568}
   - component: {fileID: 1056487567}
   m_Layer: 5
-  m_Name: Image (6)
+  m_Name: Slot 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11585,7 +11585,7 @@ GameObject:
   - component: {fileID: 1063131200}
   - component: {fileID: 1063131203}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Inventory Slot Shop 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11722,7 +11722,7 @@ GameObject:
   - component: {fileID: 1073336060}
   - component: {fileID: 1073336063}
   m_Layer: 5
-  m_Name: Image (18)
+  m_Name: Purchasable 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11925,7 +11925,7 @@ GameObject:
   - component: {fileID: 1090182775}
   - component: {fileID: 1090182778}
   m_Layer: 5
-  m_Name: Image (15)
+  m_Name: Purchasable 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12042,7 +12042,7 @@ GameObject:
   - component: {fileID: 1124801206}
   - component: {fileID: 1124801209}
   m_Layer: 5
-  m_Name: Inventory Slot (19)
+  m_Name: Inventory Slot (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13226,7 +13226,7 @@ GameObject:
   - component: {fileID: 1203930070}
   - component: {fileID: 1203930073}
   m_Layer: 5
-  m_Name: Image (10)
+  m_Name: Purchasable 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13336,7 +13336,7 @@ GameObject:
   - component: {fileID: 1216666582}
   - component: {fileID: 1216666581}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: X Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13545,7 +13545,7 @@ GameObject:
   - component: {fileID: 1236991403}
   - component: {fileID: 1236991402}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13851,7 +13851,7 @@ GameObject:
   - component: {fileID: 1257761214}
   - component: {fileID: 1257761217}
   m_Layer: 5
-  m_Name: Image (12)
+  m_Name: Purchasable 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14247,7 +14247,7 @@ GameObject:
   - component: {fileID: 1274174119}
   - component: {fileID: 1274174122}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: Purchasable 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14530,7 +14530,7 @@ GameObject:
   - component: {fileID: 1288047071}
   - component: {fileID: 1288047074}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Purchasable 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14776,7 +14776,7 @@ GameObject:
   - component: {fileID: 1300407872}
   - component: {fileID: 1300407875}
   m_Layer: 5
-  m_Name: Image (9)
+  m_Name: Purchasable 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14888,7 +14888,7 @@ GameObject:
   - component: {fileID: 1304932009}
   - component: {fileID: 1304932012}
   m_Layer: 5
-  m_Name: Image (21)
+  m_Name: Inventory Slot Shop 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15000,7 +15000,7 @@ GameObject:
   - component: {fileID: 1309021741}
   - component: {fileID: 1309021744}
   m_Layer: 5
-  m_Name: Image (17)
+  m_Name: Inventory Slot Shop 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15187,7 +15187,7 @@ GameObject:
   - component: {fileID: 1313109324}
   - component: {fileID: 1313109327}
   m_Layer: 5
-  m_Name: Image (22)
+  m_Name: Inventory Slot Shop 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15374,7 +15374,7 @@ GameObject:
   - component: {fileID: 1335334196}
   - component: {fileID: 1335334195}
   m_Layer: 5
-  m_Name: Money Panel
+  m_Name: CurrencyPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16576,7 +16576,7 @@ GameObject:
   - component: {fileID: 1397220567}
   - component: {fileID: 1397220570}
   m_Layer: 5
-  m_Name: Image (19)
+  m_Name: Inventory Slot Shop 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16846,7 +16846,7 @@ GameObject:
   - component: {fileID: 1414281665}
   - component: {fileID: 1414281664}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Dialogue Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17132,7 +17132,7 @@ GameObject:
   - component: {fileID: 1446273524}
   - component: {fileID: 1446273527}
   m_Layer: 5
-  m_Name: Image (16)
+  m_Name: Inventory Slot Shop 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17368,7 +17368,7 @@ GameObject:
   - component: {fileID: 1470505946}
   - component: {fileID: 1470505949}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Purchasable 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17555,7 +17555,7 @@ GameObject:
   - component: {fileID: 1471580273}
   - component: {fileID: 1471580276}
   m_Layer: 5
-  m_Name: Inventory Slot (20)
+  m_Name: Inventory Slot (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95030,7 +95030,7 @@ GameObject:
   - component: {fileID: 1506294863}
   - component: {fileID: 1506294866}
   m_Layer: 5
-  m_Name: Image (20)
+  m_Name: Inventory Slot Shop 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95309,7 +95309,7 @@ GameObject:
   - component: {fileID: 1518191805}
   - component: {fileID: 1518191804}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Currency Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95525,7 +95525,7 @@ GameObject:
   - component: {fileID: 1527083859}
   - component: {fileID: 1527083862}
   m_Layer: 5
-  m_Name: Image (13)
+  m_Name: Inventory Slot Shop 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95718,7 +95718,7 @@ GameObject:
   - component: {fileID: 1558745059}
   - component: {fileID: 1558745062}
   m_Layer: 5
-  m_Name: Image (11)
+  m_Name: Purchasable 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95921,7 +95921,7 @@ GameObject:
   - component: {fileID: 1580696938}
   - component: {fileID: 1580696941}
   m_Layer: 5
-  m_Name: Image (11)
+  m_Name: Inventory Slot Shop 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96199,7 +96199,7 @@ GameObject:
   - component: {fileID: 1603394817}
   - component: {fileID: 1603394820}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Inventory Slot Shop 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96311,7 +96311,7 @@ GameObject:
   - component: {fileID: 1619105180}
   - component: {fileID: 1619105183}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Purchasable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96696,7 +96696,7 @@ GameObject:
   - component: {fileID: 1628647818}
   - component: {fileID: 1628647821}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: Inventory Slot Shop 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96806,7 +96806,7 @@ GameObject:
   - component: {fileID: 1631161719}
   - component: {fileID: 1631161718}
   m_Layer: 5
-  m_Name: Date
+  m_Name: Date Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97618,7 +97618,7 @@ GameObject:
   - component: {fileID: 1673696100}
   - component: {fileID: 1673696103}
   m_Layer: 5
-  m_Name: Inventory Slot (17)
+  m_Name: Inventory Slot (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97893,7 +97893,7 @@ GameObject:
   - component: {fileID: 1682525236}
   - component: {fileID: 1682525235}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: Slot 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97990,7 +97990,7 @@ GameObject:
   - component: {fileID: 1697559866}
   - component: {fileID: 1697559865}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: Slot 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98087,7 +98087,7 @@ GameObject:
   - component: {fileID: 1700029636}
   - component: {fileID: 1700029635}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Slot 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98185,7 +98185,7 @@ GameObject:
   - component: {fileID: 1714896438}
   - component: {fileID: 1714896441}
   m_Layer: 5
-  m_Name: Inventory Slot (15)
+  m_Name: Inventory Slot (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98521,7 +98521,7 @@ GameObject:
   - component: {fileID: 1728598783}
   - component: {fileID: 1728598782}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98973,7 +98973,7 @@ GameObject:
   - component: {fileID: 1773249872}
   - component: {fileID: 1773249871}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99144,7 +99144,7 @@ GameObject:
   - component: {fileID: 1778613851}
   - component: {fileID: 1778613850}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Close Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100391,7 +100391,7 @@ GameObject:
   - component: {fileID: 1869810778}
   - component: {fileID: 1869810781}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Inventory Slot Shop 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100503,7 +100503,7 @@ GameObject:
   - component: {fileID: 1872836488}
   - component: {fileID: 1872836491}
   m_Layer: 5
-  m_Name: Image (9)
+  m_Name: Inventory Slot Shop 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -100998,7 +100998,7 @@ GameObject:
   - component: {fileID: 1932712538}
   - component: {fileID: 1932712537}
   m_Layer: 5
-  m_Name: Text Panel
+  m_Name: Dialogue Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101076,7 +101076,7 @@ GameObject:
   - component: {fileID: 1934487725}
   - component: {fileID: 1934487728}
   m_Layer: 5
-  m_Name: Image (6)
+  m_Name: Purchasable 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101262,7 +101262,7 @@ GameObject:
   - component: {fileID: 1970073150}
   - component: {fileID: 1970073149}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Slot 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101360,7 +101360,7 @@ GameObject:
   - component: {fileID: 1973989208}
   - component: {fileID: 1973989211}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: Inventory Slot Shop 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101886,7 +101886,7 @@ GameObject:
   - component: {fileID: 2027275185}
   - component: {fileID: 2027275188}
   m_Layer: 5
-  m_Name: Inventory Slot (22)
+  m_Name: Inventory Slot (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101999,7 +101999,7 @@ GameObject:
   - component: {fileID: 2031981904}
   - component: {fileID: 2031981907}
   m_Layer: 5
-  m_Name: Image (22)
+  m_Name: Purchasable 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102109,7 +102109,7 @@ GameObject:
   - component: {fileID: 2040489832}
   - component: {fileID: 2040489831}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102383,7 +102383,7 @@ GameObject:
   - component: {fileID: 2077947427}
   - component: {fileID: 2077947430}
   m_Layer: 5
-  m_Name: Image (4)
+  m_Name: Purchasable 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102789,7 +102789,7 @@ GameObject:
   - component: {fileID: 2121664608}
   - component: {fileID: 2121664611}
   m_Layer: 5
-  m_Name: Image (7)
+  m_Name: Inventory Slot Shop 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target; // The player's transform.
-    public float smoothSpeed = 5.0f; // Adjust the smoothness as needed.
+    public Transform target; 
+    public float smoothSpeed = 5.0f; 
 
     private void LateUpdate()
     {
         if (target == null)
         {
-            return; // Check if the target (player) is not null.
+            return; 
         }
-        // Calculate the desired position for the camera.
+     
         Vector3 desiredPosition = target.position;
         desiredPosition.z = -10f;
 
-        // Use Lerp to smoothly move the camera towards the player.
+        // Use Lerp to smoothly move the camera towards the player
         transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);
     }
 }

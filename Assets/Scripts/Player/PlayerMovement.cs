@@ -9,7 +9,6 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed;
     public PlayerInteractionManager.FacingDirection direction;
 
-    
     [SerializeField] private PlayerAnimationController playerAnimationController;
 
     private Vector3 defaultScale;
@@ -22,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
             playerAnimationController = GetComponent<PlayerAnimationController>();
         }
         
+        //set defaultScale, useful for Flipping
         defaultScale = transform.localScale;
     }
 
@@ -75,6 +75,8 @@ public class PlayerMovement : MonoBehaviour
 
     void UpdatePlayerDirection()
     {
+        //Convert the player Input towards a vector2. Useful for when getting close to a npc to get the last Pressed Direction
+        //This way you can still draw a raycast towards the last direction you where looking even if you don't rotate anything
         switch (playerInputAxis.normalized)
         {
             case Vector2 vec2 when vec2 == Vector2.up:

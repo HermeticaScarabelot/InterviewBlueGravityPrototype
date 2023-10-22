@@ -13,10 +13,13 @@ public class ShopManager : MonoBehaviour
     [SerializeField] private GameObject purchaseButton;
     [SerializeField] private GameObject sellButton;
 
+    
+    [Header("Purchasable")]
     [SerializeField] private GameObject purchasableTabGo;
     [SerializeField] private GameObject purchasableSlotsPanel;
     [SerializeField] private PurchasableSlotUI[] purchasableSlotsUI;
 
+    [Header("Sellable")]
     [SerializeField] private GameObject sellableTabGo;
     [SerializeField] private GameObject inventorySlotsShopPanel;
     [SerializeField] private InventorySlotShopUI[] inventorySlotsShopUI;
@@ -24,6 +27,7 @@ public class ShopManager : MonoBehaviour
 
     [SerializeField] private bool isTabTweening;
     
+    [Header("Active Items")]
     [SerializeField] private ItemScriptableObject[] activeShopItems;
     [SerializeField] public ItemScriptableObject selectedItem;
     [SerializeField] public int selectedItemSlotId;

@@ -12,12 +12,13 @@ public class InitialBlackScreen : MonoBehaviour
     [SerializeField] private Ease tweenEase;
     private Image image;
 
+    //Important for hiding the first ms that the Inventory and Shop take to initialize
+    
     private void Awake()
     {
         image = GetComponent<Image>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         Invoke("StartTween", 1f);

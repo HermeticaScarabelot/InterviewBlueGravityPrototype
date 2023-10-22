@@ -21,6 +21,7 @@ public class InventorySlotShopUI : MonoBehaviour, IPointerEnterHandler, IPointer
     
     private void Awake()
     {
+        //Always get the Image from the Child Object to make sure the UI Slot still have a Background under the Item Sprite
         image = transform.GetChild(0).GetComponent<Image>();
         defaultSpriteBg = image.sprite;
     }
@@ -32,13 +33,14 @@ public class InventorySlotShopUI : MonoBehaviour, IPointerEnterHandler, IPointer
 
     public void LoadItem(InventoryManager inventoryManager)
     {
+        //If slot is empty, leave it with the default 
         if (inventoryManager.inventoryItems[slotId] == null)
         {
             image.sprite = defaultSpriteBg;
-            Debug.Log("empty slot");
         }
         else
         {
+            //Place the correct Item in the correct Slot
             inventorySlotShopItem = inventoryManager.inventoryItems[slotId];
             image.sprite = inventorySlotShopItem.itemSprite;
         }
