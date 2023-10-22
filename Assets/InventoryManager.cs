@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
     public static InventoryManager InventoryManagerInstance;
 
     [SerializeField] private int playerCurrency;
+    [SerializeField] private TextMeshProUGUI topRightCurrencyDisplay;
     [SerializeField] private TextMeshProUGUI inventoryCurrencyDisplay;
     [SerializeField] private GameObject inventoryGo;
     [SerializeField] private GameObject inventoryPanelGo;
@@ -45,7 +46,15 @@ public class InventoryManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            OpenInventory();
+            if (!inventoryGo.activeSelf)
+            {
+                OpenInventory();
+            } else if (inventoryGo.activeSelf)
+            {
+                holdingItem = false;
+                heldItemSlotId = 0;
+                CloseInventory();
+            }
         }
         
     }
@@ -161,6 +170,7 @@ public class InventoryManager : MonoBehaviour
     void UpdateCurrencyUI()
     {
         inventoryCurrencyDisplay.text = "$" + GetPlayerCurrency().ToString();
+        topRightCurrencyDisplay.text = "$" + GetPlayerCurrency().ToString();
 
     }
 

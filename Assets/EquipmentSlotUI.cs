@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class EquipmentSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class EquipmentSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
 
     public enum EquipmentSlotType
@@ -20,8 +20,10 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExit
     [SerializeField] private ItemScriptableObject equippedItem;
     
     [SerializeField] private Image image;
+    [SerializeField] private Sprite defaultSprite;
 
-    [SerializeField]private InventoryManager inventoryManager;
+    [SerializeField] private InventoryManager inventoryManager;
+    [SerializeField] private PlayerEquipment playerEquipment;
 
     private void Awake()
     {
@@ -34,6 +36,7 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExit
         {
             image.sprite = equipmentSprite;
         }
+        defaultSprite = GetComponent<Image>().sprite;
     }
 
     private void Start()
@@ -41,7 +44,11 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExit
         if (!inventoryManager)
         {
             inventoryManager = InventoryManager.InventoryManagerInstance;
-            
+        }
+
+        if (!playerEquipment)
+        {
+            playerEquipment = PlayerEquipment.PlayerEquipmentInstance;
         }
 
     }
@@ -60,6 +67,26 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExit
             return;
         }
         inventoryManager.UpdateTooltip(equippedItem);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (eventData.button == PointerEventData.InputButton.Right)
+        {
+            if (equippedItem == null)
+            {
+                return;
+            }
+            UnEquipItem();
+        }
+    }
+
+    void UnEquipItem()
+    {
+        inventoryManager.PickupItem(equippedItem);
+        playerEquipment.UnEquipItem(equippedItem);
+        equippedItem = null;
+        image.sprite = defaultSprite;
     }
 
     public void OnPointerExit(PointerEventData eventData)

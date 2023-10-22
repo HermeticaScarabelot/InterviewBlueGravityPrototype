@@ -14,10 +14,12 @@ public class PlayerEquipment : MonoBehaviour
     [SerializeField] private EquipmentSlotUI torsoSlotUI;
     [SerializeField] public SpriteRenderer torsoRenderer;
     [SerializeField] public ItemScriptableObject equippedTorso;
-        
+    [SerializeField] private Sprite defaultTorso;
+    
     [SerializeField] private EquipmentSlotUI legsSlotUI;
     [SerializeField] public SpriteRenderer legsRenderer;
     [SerializeField] public ItemScriptableObject equippedLegs;
+    [SerializeField] private Sprite defaultLegs;
 
     private InventoryManager inventoryManager;
 
@@ -82,6 +84,25 @@ public class PlayerEquipment : MonoBehaviour
         }
         UpdateLegsUI(newLegs);
 
+    }
+
+    public void UnEquipItem(ItemScriptableObject itemToUnEquip)
+    {
+        switch (itemToUnEquip.outfitType)
+        {
+            case ItemScriptableObject.OutfitPiece.Helm:
+                equippedHelm = null;
+                helmRenderer.sprite = null;
+                break;
+            case ItemScriptableObject.OutfitPiece.Torso:
+                equippedTorso = null;
+                torsoRenderer.sprite = defaultTorso;
+                break;
+            case ItemScriptableObject.OutfitPiece.Legs:
+                equippedLegs = null;
+                legsRenderer.sprite = defaultLegs;
+                break;
+        }
     }
 
     void UpdateHelmUI(ItemScriptableObject helm)
