@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3720bd77-3678-450e-bc34-d3bafe3d2687" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Retro Gaming SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Retro Gaming SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EquipmentSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EquipmentSlotUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +19,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/DialogueManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DroppedOutfit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EquipmentSlotUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/HotbarSlotUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InventoryManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/InventorySlotShopUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PlayerAnimationController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -85,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697832997680</updated>
-      <workItem from="1697833020736" duration="59103000" />
+      <workItem from="1697833020736" duration="61239000" />
     </task>
     <servers />
   </component>

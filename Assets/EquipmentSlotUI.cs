@@ -2,9 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class EquipmentSlotUI : MonoBehaviour
+public class EquipmentSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
     public enum EquipmentSlotType
@@ -20,6 +21,8 @@ public class EquipmentSlotUI : MonoBehaviour
     
     [SerializeField] private Image image;
 
+    [SerializeField]private InventoryManager inventoryManager;
+
     private void Awake()
     {
         if (!image)
@@ -33,11 +36,39 @@ public class EquipmentSlotUI : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        if (!inventoryManager)
+        {
+            inventoryManager = InventoryManager.InventoryManagerInstance;
+            
+        }
+
+    }
+
     public void UpdateEquipmentSlot(ItemScriptableObject newItem)
     {
         equipmentSprite = newItem.itemSprite;
         equippedItem = newItem;
         image.sprite = equipmentSprite;
+    }
+    
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        if (equippedItem == null)
+        {
+            return;
+        }
+        inventoryManager.UpdateTooltip(equippedItem);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (equippedItem == null)
+        {
+            return;
+        }
+        inventoryManager.ResetTooltip();
     }
     
 }
