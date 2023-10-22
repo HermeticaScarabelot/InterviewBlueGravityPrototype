@@ -18,4 +18,4 @@ MonoBehaviour:
   itemSprite: {fileID: 21300000, guid: 20eb058aea3c3a744bb5d47a1610550a, type: 3}
   additionalSprites: []
   itemDescription: 
-  itemPrice: 0
+  itemPrice: 100

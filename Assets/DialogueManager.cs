@@ -34,7 +34,16 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public bool IsInDialogue()
+    {
+        if (dialoguePanel.activeSelf)
+        {
+            return true;
+        }
 
+        return false;
+    }
+    
     private void Start()
     {
         shopManager = ShopManager.ShopManagerInstance;

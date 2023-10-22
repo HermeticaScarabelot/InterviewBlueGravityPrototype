@@ -12,8 +12,11 @@ public class Dialogue : Interactable
     
     [SerializeField] public string[] lines;
     private int linesIndex = 0;
+    [SerializeField] private GameObject interactTextGo;
 
+    
     private DialogueManager dialogueManager;
+    private float distanceFromPlayer;
 
     private void Start()
     {
@@ -30,9 +33,11 @@ public class Dialogue : Interactable
 
     private void Update()
     {
+        distanceFromPlayer = Vector2.Distance(dialogueManager.playerGo.transform.position, transform.position);
+        UpdateInteractText();
+        
         if (interactedRecently)
         {
-            var distanceFromPlayer = Vector2.Distance(dialogueManager.playerGo.transform.position, transform.position);
             Debug.Log(distanceFromPlayer);
             if (distanceFromPlayer > 2)
             {
@@ -40,6 +45,18 @@ public class Dialogue : Interactable
                 linesIndex = 0;
                 dialogueManager.CloseDialogue();
             }
+        }
+    }
+
+    void UpdateInteractText()
+    {
+        if (distanceFromPlayer > 2 && interactTextGo.activeSelf)
+        {
+            interactTextGo.SetActive(false);
+        }
+        else if(distanceFromPlayer < 2 && !interactTextGo.activeSelf)
+        {   
+            interactTextGo.SetActive(true);
         }
     }
 

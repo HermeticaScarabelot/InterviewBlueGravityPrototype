@@ -22,6 +22,8 @@ public class InventoryManager : MonoBehaviour
     public bool holdingItem;
 
     [SerializeField] private TooltipSlotUI tooltipSlotUI;
+
+    [SerializeField] private DialogueManager dialogueManager;
     
     //public List<ScriptableObject> inventoryItems = new List<ScriptableObject>();
 
@@ -42,9 +44,14 @@ public class InventoryManager : MonoBehaviour
         Invoke("CloseInventory",0.1f);
     }
 
+    private void Start()
+    {
+        dialogueManager = DialogueManager.DialogueManagerInstance;
+    }
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) && !dialogueManager.IsInDialogue())
         {
             if (!inventoryGo.activeSelf)
             {

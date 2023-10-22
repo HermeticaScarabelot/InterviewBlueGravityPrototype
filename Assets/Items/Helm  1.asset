@@ -17,5 +17,5 @@ MonoBehaviour:
   itemName: Helm 1
   itemSprite: {fileID: 21300000, guid: 468244f274f38f64b85773c7888444b6, type: 3}
   additionalSprites: []
-  itemDescription: 
-  itemPrice: 0
+  itemDescription: A Leather Hood
+  itemPrice: 25

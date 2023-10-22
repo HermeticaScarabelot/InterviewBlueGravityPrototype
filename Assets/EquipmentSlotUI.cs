@@ -87,6 +87,7 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExit
         playerEquipment.UnEquipItem(equippedItem);
         equippedItem = null;
         image.sprite = defaultSprite;
+        inventoryManager.UpdateTooltip(null);
     }
 
     public void OnPointerExit(PointerEventData eventData)

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -8,11 +9,14 @@ using UnityEngine.UI;
 public class InventorySlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
-    public int slotId;
-    public ItemScriptableObject scriptableItem;
-    public ItemScriptableObject.ItemType type;
-    public string itemName;
-    public Sprite itemSprite;
+    [SerializeField] public int slotId;
+    [SerializeField] private ItemScriptableObject scriptableItem;
+    [SerializeField] private ItemScriptableObject.ItemType type;
+    [SerializeField] private string itemName;
+    [SerializeField] private Sprite itemSprite;
+    [SerializeField] private int itemPrice;
+    [SerializeField] private TextMeshProUGUI itemDescription;
+    
     
     [SerializeField] private Image image;
 

@@ -24,10 +24,15 @@ public class TooltipSlotUI : MonoBehaviour
         {
             image.sprite = defaultSprite;
             itemName.text = String.Empty;
+            itemDescription.text = String.Empty;
             return;
         }
         image.sprite = item.itemSprite;
         itemName.text = item.name;
+        itemDescription.text = item.itemDescription + "\n\n" +
+                               "Item Value: " + item.itemPrice;
+
+
     }
 
     public void Reset()
