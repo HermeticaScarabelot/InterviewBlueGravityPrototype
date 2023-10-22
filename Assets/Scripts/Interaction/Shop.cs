@@ -31,7 +31,7 @@ public class Shop : Interactable
             return;
         }
         base.Interact();
-        ShopTest();
+        OpenShop();
     }
 
     private void Start()
@@ -39,7 +39,8 @@ public class Shop : Interactable
         shopManager = ShopManager.ShopManagerInstance;
         if (hasDialogue)
         {
-            dialogue.OnDialogueFinished += ShopTest;
+            //Add Listener to make it Call OpenShop when Dialogue reaches final Index
+            dialogue.OnDialogueFinished += OpenShop; 
         }
     }
     
@@ -47,6 +48,7 @@ public class Shop : Interactable
     {
         if (interactedRecently)
         {
+            //If distance from player, the Shop Closes
             var distanceFromPlayer = Vector2.Distance(shopManager.playerGo.transform.position, transform.position);
             Debug.Log(distanceFromPlayer);
             if (distanceFromPlayer > 2)
@@ -57,7 +59,7 @@ public class Shop : Interactable
         }
     }
 
-    void ShopTest()
+    void OpenShop()
     {
         shopManager.OpenShop(availableItemsForSale);
     }
@@ -66,7 +68,7 @@ public class Shop : Interactable
     {
         if (hasDialogue)
         {
-            dialogue.OnDialogueFinished -= ShopTest;
+            dialogue.OnDialogueFinished -= OpenShop;
         }
     }
 }

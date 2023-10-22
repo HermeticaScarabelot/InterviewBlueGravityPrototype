@@ -39,6 +39,7 @@ public class ShopManager : MonoBehaviour
     {
         ShopManagerInstance = this;
         
+        //Initialize Shop Slot by assigning them to each Slot in the PurchaseblePanel
         PurchasableSlotUI[] purchasableSlots = purchasableSlotsPanel.GetComponentsInChildren<PurchasableSlotUI>();
         purchasableSlotsUI = new PurchasableSlotUI[purchasableSlots.Length];
         for (int i = 0; i < purchasableSlots.Length; i++)
@@ -46,6 +47,7 @@ public class ShopManager : MonoBehaviour
             purchasableSlotsUI[i] = purchasableSlots[i];
         }
 
+        //Initialize the Inventory Tab
         InventorySlotShopUI[] inventorySlotsShop = inventorySlotsShopPanel.GetComponentsInChildren<InventorySlotShopUI>();
         inventorySlotsShopUI = new InventorySlotShopUI[inventorySlotsShop.Length];
         for (int i = 0; i < inventorySlotsShop.Length; i++)
@@ -54,6 +56,7 @@ public class ShopManager : MonoBehaviour
             inventorySlotsShopUI[i].slotId = i;
         }
 
+        //Close after Initialization
         if (shopGo.activeSelf)
         {
             Invoke("DeActivateShopOnStart", 0.15f);
@@ -77,8 +80,10 @@ public class ShopManager : MonoBehaviour
 
     public void OpenShop(ItemScriptableObject[] itemsForSale)
     {
+        //Reset Tooltip and make sure the player isn't holding a Item
         DeSelectItem();
         activeShopItems = itemsForSale;
+        //change to purchasable Tab
         ChangeToPurchasable();
         shopGo.SetActive(true);
         UpdateCurrencyUI();
@@ -95,9 +100,11 @@ public class ShopManager : MonoBehaviour
     public void ChangeToPurchasable()
     {
         DeSelectItem();
+        //Deactivates Sell Button and Panel
         inventorySlotsShopPanel.SetActive(false);
         sellButton.SetActive(false);
         
+        //Activate and Tween purchasable panel
         purchasableSlotsPanel.SetActive(true);
         if (!isTabTweening)
         {
@@ -132,9 +139,11 @@ public class ShopManager : MonoBehaviour
     public void ChangeToSellable()
     {
         DeSelectItem();
+        //Deactivate purchase button and Panel
         purchaseButton.SetActive(false);
         purchasableSlotsPanel.SetActive(false);
         
+        //Activate and Tween inventory tab and sell button
         inventorySlotsShopPanel.SetActive(true);
         if (!isTabTweening)
         {
@@ -160,6 +169,7 @@ public class ShopManager : MonoBehaviour
             return;
         }
 
+        //Checks if the player has enough currency
         if (inventoryManager.SpendMoney(selectedItem.itemPrice))
         {
             inventoryManager.PickupItem(selectedItem);
@@ -176,6 +186,7 @@ public class ShopManager : MonoBehaviour
         }
         inventoryManager.ReceiveMoney(selectedItem.itemPrice);
         inventoryManager.RemoveItemByIndex(selectedItemSlotId);
+        //Update the UI
         LoadInventory();
         DeSelectItem();
         UpdateCurrencyUI();

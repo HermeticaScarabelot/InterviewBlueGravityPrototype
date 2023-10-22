@@ -37,7 +37,7 @@ public class InventoryManager : MonoBehaviour
         InventoryManagerInstance = this;
         
         
-
+        //Initialize Inventory
         inventorySlotsUI = inventoryPanelGo.GetComponentsInChildren<InventorySlotUI>(); //Get all 24 Slots, then automatically set the Id on each one
         for (int i = 0; i < inventorySlotsUI.Length; i++)
         {
@@ -55,12 +55,12 @@ public class InventoryManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I) && !dialogueManager.IsInDialogue())
+        if (Input.GetKeyDown(KeyCode.I) && !dialogueManager.IsInDialogue()) // Do not open Inventory while in Shop
         {
             if (!inventoryGo.activeSelf)
             {
                 OpenInventory();
-            } else if (inventoryGo.activeSelf && !isTweening)
+            } else if (inventoryGo.activeSelf && !isTweening) //Make sure to reset held item when Inventory Closes
             {
                 holdingItem = false;
                 heldItemSlotId = 0;
@@ -84,6 +84,7 @@ public class InventoryManager : MonoBehaviour
 
     void TweenUpInventory()
     {
+        //Make sure to not override tween if it's already tweening
         isTweening = true;
         inventoryGo.transform.localScale = new Vector3(0f,0,0);
         inventoryGo.transform.DOKill();

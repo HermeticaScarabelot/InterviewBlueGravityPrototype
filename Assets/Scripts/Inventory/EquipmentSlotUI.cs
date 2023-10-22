@@ -41,6 +41,8 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     private void Start()
     {
+        //Find Singletons
+        
         if (!inventoryManager)
         {
             inventoryManager = InventoryManager.InventoryManagerInstance;
@@ -66,6 +68,7 @@ public class EquipmentSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExit
         {
             return;
         }
+        //Update tooltip when Player hover over
         inventoryManager.UpdateTooltip(equippedItem);
     }
 
