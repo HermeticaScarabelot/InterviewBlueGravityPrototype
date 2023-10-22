@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
@@ -15,7 +17,6 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject inventoryGo;
     [SerializeField] private GameObject inventoryPanelGo;
     [SerializeField] private InventorySlotUI[] inventorySlotsUI = new InventorySlotUI[0];
-    
     public ItemScriptableObject[] inventoryItems = new ItemScriptableObject[0];
 
     public int heldItemSlotId;
@@ -23,9 +24,12 @@ public class InventoryManager : MonoBehaviour
 
     [SerializeField] private TooltipSlotUI tooltipSlotUI;
 
+    [SerializeField] private float tweenScaleDuration;
+    [SerializeField] private Ease tweenEase;
+    [SerializeField] private bool isTweening;
+    
     [SerializeField] private DialogueManager dialogueManager;
     
-    //public List<ScriptableObject> inventoryItems = new List<ScriptableObject>();
 
     private void Awake()
     {
@@ -56,7 +60,7 @@ public class InventoryManager : MonoBehaviour
             if (!inventoryGo.activeSelf)
             {
                 OpenInventory();
-            } else if (inventoryGo.activeSelf)
+            } else if (inventoryGo.activeSelf && !isTweening)
             {
                 holdingItem = false;
                 heldItemSlotId = 0;
@@ -74,12 +78,28 @@ public class InventoryManager : MonoBehaviour
     public void OpenInventory()
     {
         inventoryGo.SetActive(true);
+        TweenUpInventory();
         UpdateCurrencyUI();
+    }
+
+    void TweenUpInventory()
+    {
+        isTweening = true;
+        inventoryGo.transform.localScale = new Vector3(0f,0,0);
+        inventoryGo.transform.DOKill();
+        inventoryGo.transform.DOScale(1, tweenScaleDuration).SetEase(tweenEase).OnComplete(()=>isTweening = false);
     }
 
     public void CloseInventory()
     {
-        inventoryGo.SetActive(false);
+        TweenDownInventory().OnComplete(()=>inventoryGo.SetActive(false));
+    }
+    
+    Tween TweenDownInventory()
+    {
+        inventoryGo.transform.DOKill();
+        isTweening = true;
+        return inventoryGo.transform.DOScale(0f, tweenScaleDuration).SetEase(tweenEase);
     }
 
     public bool PickupItem(ItemScriptableObject item)

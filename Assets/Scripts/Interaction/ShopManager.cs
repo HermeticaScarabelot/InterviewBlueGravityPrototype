@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
@@ -11,14 +12,18 @@ public class ShopManager : MonoBehaviour
     [SerializeField] public GameObject shopGo;
     [SerializeField] private GameObject purchaseButton;
     [SerializeField] private GameObject sellButton;
-    
+
+    [SerializeField] private GameObject purchasableTabGo;
     [SerializeField] private GameObject purchasableSlotsPanel;
     [SerializeField] private PurchasableSlotUI[] purchasableSlotsUI;
 
+    [SerializeField] private GameObject sellableTabGo;
     [SerializeField] private GameObject inventorySlotsShopPanel;
     [SerializeField] private InventorySlotShopUI[] inventorySlotsShopUI;
     [SerializeField] private InventoryManager inventoryManager;
 
+    [SerializeField] private bool isTabTweening;
+    
     [SerializeField] private ItemScriptableObject[] activeShopItems;
     [SerializeField] public ItemScriptableObject selectedItem;
     [SerializeField] public int selectedItemSlotId;
@@ -27,6 +32,8 @@ public class ShopManager : MonoBehaviour
     [SerializeField] public GameObject playerGo;
 
     [SerializeField] public TooltipSlotUI tooltipSlotUI;
+    
+
     
     private void Awake()
     {
@@ -92,6 +99,11 @@ public class ShopManager : MonoBehaviour
         sellButton.SetActive(false);
         
         purchasableSlotsPanel.SetActive(true);
+        if (!isTabTweening)
+        {
+            isTabTweening = true;
+            purchasableTabGo.transform.DOScale(0.75f, 0.15f).SetEase(Ease.InOutCirc).SetLoops(2, LoopType.Yoyo).OnComplete(()=>isTabTweening = false);
+        }
         purchaseButton.SetActive(true);
         LoadShop();
     }
@@ -124,6 +136,11 @@ public class ShopManager : MonoBehaviour
         purchasableSlotsPanel.SetActive(false);
         
         inventorySlotsShopPanel.SetActive(true);
+        if (!isTabTweening)
+        {
+            isTabTweening = true;
+            sellableTabGo.transform.DOScale(0.75f, 0.15f).SetEase(Ease.InOutCirc).SetLoops(2, LoopType.Yoyo).OnComplete(()=>isTabTweening = false);
+        }
         sellButton.SetActive(true);
         LoadInventory();
     }

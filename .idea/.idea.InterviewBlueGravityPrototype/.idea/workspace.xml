@@ -2,55 +2,208 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3720bd77-3678-450e-bc34-d3bafe3d2687" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Dropped Items.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InterviewBlueGravityPrototype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraFollow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CameraFollow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/CameraFollow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/CameraFollow.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DateDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DateDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DateDisplay.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/DateDisplay.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Dialogue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Dialogue.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogueManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/DialogueManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DroppedOutfit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dropped Items/DroppedOutfit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DroppedOutfit.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dropped Items/DroppedOutfit.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EquipmentSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/EquipmentSlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EquipmentSlotUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/EquipmentSlotUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HotbarSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HotbarSlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HotbarSlotUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/HotbarSlotUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Interactable.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Interactable.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventoryManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySlotShopUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotShopUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySlotShopUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotShopUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InventorySlotUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventorySlotUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Item.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/Item.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Outfit.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Outfit.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerAnimationController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerAnimationController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerEquipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerEquipment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerEquipment.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerEquipment.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInteractionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerInteractionManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInteractionManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/PlayerInteractionManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PurchasableSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PurchasableSlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PurchasableSlotUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/PurchasableSlotUI.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shop.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/Shop.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ShopManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ShopManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ShopManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TooltipSlotUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TooltipSlotUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TooltipSlotUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TooltipSlotUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/DarkUI.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/DarkUI.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/128 Light 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/128 Light 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/128 Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/128 Light.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/128.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/32 Light 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/32 Light 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/32 Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/32 Light.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/32.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/64 Light 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/64 Light 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/64 Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/64 Light.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/64.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/64.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Add Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Add Icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/B.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_A1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_A1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_A2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_A2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_A3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_A3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_Line_4PX_Large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_Line_4PX_Large.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_Line_4PX_Medium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_Line_4PX_Medium.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_Line_4PX_Small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/BTN_Line_4PX_Small.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Bell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Bell.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/ButtonLargeRound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/ButtonLargeRound.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/ButtonMediumRound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/ButtonMediumRound.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/ButtonSmallRound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/ButtonSmallRound.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Button_Large_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Button_Large_A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Button_Medium_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Button_Medium_A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Button_Small_A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Button_Small_A.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/C.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/C.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE2PXLAR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE2PXLAR.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE2PXMED.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE2PXMED.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE2PXSMALL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE2PXSMALL.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE4PXLAR.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE4PXLAR.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE4PXMED.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE4PXMED.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE4PXSMA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/CIRCLE4PXSMA.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Close BTN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Close BTN.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Coin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/D.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Divider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Divider.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Down Arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Down Arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Down BTN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Down BTN.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/E.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/F.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Facebook 2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Facebook 2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Facebook.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Gem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Gem.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Heart.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Icon Sets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Icon Sets.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Info.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Info.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/InputField.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/InputField.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Inventory.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Inventory.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Left Arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Left Arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Left BTN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Left BTN.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Lock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Lock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Messages.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Messages.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Missions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Missions.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Music.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Ranks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Ranks.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Right Arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Right Arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Right BTN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Right BTN.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Settings.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Shop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Shop.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Sound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Sound.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Star.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Up Arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Up Arrow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Up BTN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/Up BTN.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/World.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/World.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/X.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Free/X.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Close Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Close Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Content 1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Content 1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Facebook Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Facebook Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Info Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Info Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Inventory Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Inventory Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Item List.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Item List.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Messages Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Messages Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Missions Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Missions Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Music.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Music.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Notification.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Notification.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Play Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Play Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Ranking Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Ranking Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Send Hearts BTN.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Send Hearts BTN.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Settings Button.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Settings Button.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Shop.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Shop.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Sound.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Buttons/Sound.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Facebook Login.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Facebook Login.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Inventory Panel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Inventory Panel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Lose.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Lose.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Missions.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Missions.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/My Info Panel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/My Info Panel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Panel.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Panel.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Ranking.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Ranking.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Settings.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Settings.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Shop.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Shop.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Win.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Dark UI/Prefabs Panel/Win.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Retro Gaming SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Retro Gaming SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InitialBlackScreen.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InitialBlackScreen.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rogue_Idle_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Rogue_Idle_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interaction/ShopManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interaction/ShopManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory/InventoryManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +212,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/10871f9e312b442cb78b9b97db88fdcb172a00/c1/94223e50/Color.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dropped Items/DroppedOutfit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/Dialogue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interaction/DialogueManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -135,7 +289,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697832997680</updated>
-      <workItem from="1697833020736" duration="67008000" />
+      <workItem from="1697833020736" duration="70296000" />
     </task>
     <servers />
   </component>
